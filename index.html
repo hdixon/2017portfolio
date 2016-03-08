@@ -1,60 +1,116 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Henry Dixon is a developer and designer based in Boston and Pittsburgh.">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://use.typekit.net/qll6bvc.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
     <style>
         body {
-            margin: 40px auto;
-            max-width: 650px;
-            font-family: "source-sans-pro",sans-serif;
-            line-height: 1.5;
-            font-size: 1.1em;
-            color: #2f292b;
+            font-family: "freight-text-pro", Georgia, "Georgia", serif;
+            line-height: 1.3;
+            font-size: 1.2em;
+            color: #E9E9E9;
             padding: 0 10px;
-            background-color: #EEE;
+            background-color: #233447;
         }
 
         h1,
         h2,
         h3 {
             line-height: 1.2;
-            color: #2f292b;
+            color: #f86b62;
         }
 
         a {
-            color: #2f292b;
+            color: #FEDE4F;
             text-decoration: none;
         }
 
         a:hover {
-            color: #f45844;
+            color: #E9E9E9;
             transition: all 300ms ease-in-out;
         }
 
-        ul {
-            list-style-type: none;
+        .link-list {
+            text-align: center;
+            width: 16em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #footer-contact {
+            border-style: solid;
+            font-size: 15px;
+            margin-top: 30px;
+            width: 250px;
+        }
+
+        #namecard {
+            display: inline-block;
+            margin-left: 40px auto;
+            width: 400px;
+            float: left;
+        }
+
+        #linkcard {}
+
+        #name {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        #activities {
+            float: right;
+            width: 400px;
         }
     </style>
     <title>henry dixon</title>
 </head>
 
 <body>
-    <h1>Hey! I'm Henry.</h1> I'm currently a student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
-    <em>Cognitive Science</em> and <em>Human Computer Interaction</em>. I do research on privacy and security at <a href="https://cylab.cmu.edu">CMU's CyLab</a>.
-
-    <h3>Projects</h3>
-    <ul>
-        <li><a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a></li>
-        <li><a href="http://wirelessworld.fm/">Wireless World Radio</a></li>
-        <li><a href="http://upphoto.us/">Up Photography</a></li>
-    </ul>
-    <h3>Hobbies</h3>
-    <ul>
-        <li><a href="http://flickr.com/photos/henrydixon/">Photography</a></li>
-        <li><a href="https://www.youtube.com/user/gogogadgethd">Videos</a></li>
-        <li><a href="http://leakingentropy.com/">Blog</a></li>
-    </ul>
+    <div id="namecard">
+        <span id="name"><i>Henry Dixon</i>&mdash;</span>
+        <br>Student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
+        <em>Cognitive Science</em> and <em>Human Computer Interaction</em>.
+    </div>
+    <div id="activities">
+        <div class="link-list">
+            I do research on privacy and security at <a href="https://cylab.cmu.edu">CMU's CyLab</a>.
+        </div>
+        <div class="link-list">
+            <h3>Projects</h3>
+            <a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a>
+            <br>
+            <a href="http://wirelessworld.fm/">Wireless World Radio</a>
+            <br>
+            <a href="http://upphoto.us/">Up Photography</a>
+            <br>
+        </div>
+        <div class="link-list">
+            <h3>Hobbies</h3>
+            <a href="http://flickr.com/photos/henrydixon/">Photography</a>
+            <br>
+            <a href="https://www.youtube.com/user/gogogadgethd">Videos</a>
+            <br>
+            <a href="http://leakingentropy.com/">Blog</a>
+        </div>
+    </div>
+    <div id="footer-contact" class="container">
+        Reach me <a href="mailto:hdixon@cmu.edu">hdixon@cmu.edu</a>
+        <br> or download my <a href="/pdfs/resume.pdf">resume</a>.
+        <div>
 </body>
 
 </html>

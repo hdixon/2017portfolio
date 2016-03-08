@@ -7,23 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Henry Dixon is a developer and designer based in Boston and Pittsburgh.">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://use.typekit.net/qll6bvc.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: true
-            });
-        } catch (e) {}
-    </script>
 
     <style>
         body {
-            font-family: "freight-text-pro", Georgia, "Georgia", serif;
+            font-family: "Source Sans Pro", helvetica, arial, sans-serif;
             line-height: 1.3;
             font-size: 1.2em;
             color: #E9E9E9;
             padding: 0 10px;
-            background-color: #233447;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            display: block;
         }
 
         h1,
@@ -50,30 +47,48 @@
             margin-right: auto;
         }
 
-        #footer-contact {
-            border-style: solid;
-            font-size: 15px;
-            margin-top: 30px;
-            width: 250px;
+        .container {
+            width: calc(70% - 20px);
+            max-width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 auto;
+            display: table;
+            height: 100vh;
         }
 
         #namecard {
-            display: inline-block;
-            margin-left: 40px auto;
-            width: 400px;
-            float: left;
+            height: 100vh;
+            min-height: 380px;
+            background-color: #233447;
+            background-size: cover;
         }
 
-        #linkcard {}
+        #content {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 5% 90px;
+            font-weight: 300;
+            width: 50px;
+        }
 
         #name {
-            font-size: 1.3em;
-            font-weight: bold;
+            font-size: 1.5em;
+            color: #f86b62;
+            font-weight: 600;
         }
 
         #activities {
-            float: right;
-            width: 400px;
+            height: 100vh;
+            border-style: solid;
+            background-color: #f86b62;
+        }
+
+        #footer-contact {
+            height: 50vh;
+            font-size: 15px;
+            margin-top: 30px;
+            display: block;
         }
     </style>
     <title>henry dixon</title>
@@ -81,36 +96,48 @@
 
 <body>
     <div id="namecard">
-        <span id="name"><i>Henry Dixon</i>&mdash;</span>
-        <br>Student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
-        <em>Cognitive Science</em> and <em>Human Computer Interaction</em>.
+        <div class="container">
+            <div id="content">
+                <span id="name">Henry Dixon&mdash;</span>
+                <br>Student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
+                <em>Cognitive Science</em> and <em>Human Computer Interaction</em>.
+            </div>
+        </div>
     </div>
     <div id="activities">
-        <div class="link-list">
-            I do research on privacy and security at <a href="https://cylab.cmu.edu">CMU's CyLab</a>.
-        </div>
-        <div class="link-list">
-            <h3>Projects</h3>
-            <a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a>
-            <br>
-            <a href="http://wirelessworld.fm/">Wireless World Radio</a>
-            <br>
-            <a href="http://upphoto.us/">Up Photography</a>
-            <br>
-        </div>
-        <div class="link-list">
-            <h3>Hobbies</h3>
-            <a href="http://flickr.com/photos/henrydixon/">Photography</a>
-            <br>
-            <a href="https://www.youtube.com/user/gogogadgethd">Videos</a>
-            <br>
-            <a href="http://leakingentropy.com/">Blog</a>
+        <div class="container">
+            <div class="link-list">
+                I do research on privacy and security at <a href="https://cylab.cmu.edu">CMU's CyLab</a>.
+            </div>
+            <div class="link-list">
+                <h3>Projects</h3>
+                <a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a>
+                <br>
+                <a href="http://wirelessworld.fm/">Wireless World Radio</a>
+                <br>
+                <a href="http://upphoto.us/">Up Photography</a>
+                <br>
+            </div>
+            <div class="link-list">
+                <h3>Hobbies</h3>
+                <a href="http://flickr.com/photos/henrydixon/">Photography</a>
+                <br>
+                <a href="https://www.youtube.com/user/gogogadgethd">Videos</a>
+                <br>
+                <a href="http://leakingentropy.com/">Blog</a>
+            </div>
         </div>
     </div>
-    <div id="footer-contact" class="container">
-        Reach me <a href="mailto:hdixon@cmu.edu">hdixon@cmu.edu</a>
-        <br> or download my <a href="/pdfs/resume.pdf">resume</a>.
-        <div>
+    <div id="footer-contact">
+        <div class="container">
+            Reach me <a href="mailto:hdixon@cmu.edu">hdixon@cmu.edu</a>
+            <br> or download my <a href="/pdfs/resume.pdf">resume</a>.
+
+            <br>
+            <br>
+            <br>social icons here
+        </div>
+    </div>
 </body>
 
 </html>

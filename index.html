@@ -1,60 +1,149 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <script src="https://use.typekit.net/qll6bvc.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Henry Dixon is a developer and designer based in Boston and Pittsburgh.">
+    <link rel="stylesheet" href="/css/style.css">
+
     <style>
         body {
-            margin: 40px auto;
-            max-width: 650px;
-            font-family: "source-sans-pro",sans-serif;
-            line-height: 1.5;
-            font-size: 1.1em;
-            color: #2f292b;
-            padding: 0 10px;
-            background-color: #EEE;
+            font-family: "Source Sans Pro", helvetica, arial, sans-serif;
+            line-height: 1.3;
+            color: #E9E9E9;
+            margin: 0px;
+        }
+
+        div {
+            display: block;
         }
 
         h1,
         h2,
         h3 {
             line-height: 1.2;
-            color: #2f292b;
+            margin-bottom: 0px;
         }
 
         a {
-            color: #2f292b;
+            color: #FEDE4F;
             text-decoration: none;
         }
 
         a:hover {
-            color: #f45844;
-            transition: all 300ms ease-in-out;
+            color: #E9E9E9;
+            transition: all 400ms ease-in-out;
         }
 
-        ul {
-            list-style-type: none;
+        a.button {
+            text-align: center;
+            padding: 10px 20px 11px;
+            font-weight: 700;
+            transition: 200ms all ease-in-out;
+            margin: 20px 10px;
+            text-transform: uppercase;
+            position: relative;
+            border: 1px solid #233447;
+            color: #233447;
         }
+
+        a.button:hover{
+            background: #EF5350;
+            color: #ECEFF1;
+            border-color: #EF5350;
+        }
+
+        .container {
+            width: calc(80% - 200px);
+            max-width: 350px;
+            vertical-align: middle;
+            margin: 0 auto;
+            display: table;
+        }
+
+        .content {
+            display: table-cell;
+            vertical-align: middle;
+            font-weight: 300;
+            height: 100vh;
+        }
+
+        #namecard {
+            height: 100vh;
+            min-height: 200px;
+            background-color: #233447;
+        }
+
+        #name {
+            font-size: 1.5em;
+            color: #f86b62;
+            font-weight: 600;
+        }
+
+        #activities {
+            height: 100vh;
+            min-height: 280px;
+            background-color: #f86b62;
+            padding: 50px;
+
+        }
+
+        #footer-contact {
+            font-size: 15px;
+            padding: 30px;
+            margin: 30px;
+            display: block;
+            color: #233447;
+            background-color: #FFF;
+            text-align: center;
+        }
+
     </style>
-    <title>henry dixon</title>
+    <title>hdixon.io</title>
 </head>
 
 <body>
-    <h1>Hey! I'm Henry.</h1> I'm currently a student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
-    <em>Cognitive Science</em> and <em>Human Computer Interaction</em>. I do research on privacy and security at <a href="https://cylab.cmu.edu">CMU's CyLab</a>.
+    <div id="namecard">
+        <div class="container">
+            <div class="content">
+                <span id="name">Henry Dixon &mdash;</span>
+                <br>Student at <a href="http://cmu.edu/">Carnegie Mellon University</a> studying
+                <em>Cognitive Science</em> and <em>Human Computer Interaction</em>. Researcher at <a href="http://cylab.cmu.edu/">CMU's CyLab</a>.
+            </div>
+        </div>
+    </div>
+    <div id="activities">
+        <div class="container">
+            <div class="content">
+                <div class="link-list">
+                    <h2>Projects</h2>
+                    <a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a>
+                    <br>
+                    <a href="http://wirelessworld.fm/">Wireless World Radio</a>
+                    <br>
+                    <a href="http://upphoto.us/">Up Photography</a>
+                    <br>
+                </div>
+                <div class="link-list">
+                    <h2>Hobbies</h2>
+                    <a href="http://flickr.com/photos/henrydixon/">Photography</a>
+                    <br>
+                    <a href="https://www.youtube.com/user/gogogadgethd">Videos</a>
+                    <br>
+                    <a href="http://leakingentropy.com/">Blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-contact">
+        <div class="container">
+            <a href="mailto:hdixon@cmu.edu" role="button" class="button">Email Me</a>
+            <a href="/pdfs/resume.pdf" role="button" class="button">Resume</a>
 
-    <h3>Projects</h3>
-    <ul>
-        <li><a href="http://cups.cs.cmu.edu/~meter/meter.htm">Password Meter & Research</a></li>
-        <li><a href="http://wirelessworld.fm/">Wireless World Radio</a></li>
-        <li><a href="http://upphoto.us/">Up Photography</a></li>
-    </ul>
-    <h3>Hobbies</h3>
-    <ul>
-        <li><a href="http://flickr.com/photos/henrydixon/">Photography</a></li>
-        <li><a href="https://www.youtube.com/user/gogogadgethd">Videos</a></li>
-        <li><a href="http://leakingentropy.com/">Blog</a></li>
-    </ul>
+        </div>
+    </div>
 </body>
 
 </html>

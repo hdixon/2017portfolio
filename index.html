@@ -16,10 +16,6 @@
             margin: 0px;
         }
 
-        div {
-            display: block;
-        }
-
         h1,
         h2,
         h3 {
@@ -39,25 +35,27 @@
 
         a.button {
             text-align: center;
-            padding: 10px 20px 11px;
+            font-size: 0.8em;
+            padding: 5px 10px 6px;
             font-weight: 700;
             transition: 200ms all ease-in-out;
             margin: 20px 10px;
             text-transform: uppercase;
             position: relative;
-            border: 1px solid #233447;
-            color: #233447;
+            color: #ECEFF1;
+            border: 1px solid #ECEFF1; // whiteish
         }
 
         a.button:hover{
             background: #EF5350;
-            color: #ECEFF1;
+            color: #ECEFF1; // whiteish
             border-color: #EF5350;
         }
 
         .container {
             width: calc(80% - 200px);
             max-width: 350px;
+            min-width: 240px;
             vertical-align: middle;
             margin: 0 auto;
             display: table;
@@ -74,6 +72,14 @@
             height: 100vh;
             min-height: 200px;
             background-color: #233447;
+            font-size: 1.2em;
+        }
+
+        #contact {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 30px;
         }
 
         #name {
@@ -87,10 +93,10 @@
             min-height: 280px;
             background-color: #f86b62;
             padding: 50px;
-
+            font-size: 1.2em;
         }
 
-        #footer-contact {
+        #footer {
             font-size: 15px;
             padding: 30px;
             margin: 30px;
@@ -100,12 +106,17 @@
             text-align: center;
         }
 
+
     </style>
     <title>hdixon.io</title>
 </head>
 
 <body>
     <div id="namecard">
+        <div id="contact">
+            <a href="mailto:hdixon@cmu.edu" role="button" class="button">Email Me</a>
+            <a href="/pdfs/resume.pdf" role="button" class="button" id="emailbtn">Resume</a>
+        </div>
         <div class="container">
             <div class="content">
                 <span id="name">Henry Dixon &mdash;</span>
@@ -137,12 +148,10 @@
             </div>
         </div>
     </div>
-    <div id="footer-contact">
-        <div class="container">
-            <a href="mailto:hdixon@cmu.edu" role="button" class="button">Email Me</a>
-            <a href="/pdfs/resume.pdf" role="button" class="button">Resume</a>
 
-        </div>
+    <div id="footer">
+        made one pixel at a time with love <br>
+        this site is a work in progress
     </div>
 </body>
 

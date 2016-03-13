@@ -37,8 +37,12 @@
                 // s.px +=
 
                 if (!s.bounds.intersects(view.bounds)) {
-                    s.remove();
-                    drawCircle(Math.round(Math.random() * num));
+                    if (s.position.x > width) {
+                        s.position.x %= width;
+                    }
+                    if (s.position.y > height) {
+                        s.position.y %= height;
+                    }
                 }
             }
         }

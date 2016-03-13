@@ -28,21 +28,8 @@
 
         // Place the instances of the symbol:
         for (var i = 0; i < num; i++) {
-
-            var center = Point.random() * view.size;
-            var scale = (i + 1) / num; // makes circles of all sizes
-            var s = new Shape.Circle(center, 50 * scale);
-            s.blendMode = 'multiply';
-            s.opacity = 0.95 - Math.random();
-
-            if (i % 3 == 0) {
-                s.fillColor = 'red';
-            }
-            else if (i % 3 == 1) {
-                s.fillColor = 'green';
-            } else {
-                s.fillColor = 'blue';
-            }
+            
+            drawCircle(i);
         }
 
         function posOrNeg() {

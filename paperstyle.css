@@ -23,6 +23,7 @@ canvas[resize] {
 canvas#background {
     position: absolute;
     max-width: 100%;
+    min-height: 100%;
     width: auto;
     height: auto;
     z-index: -1;

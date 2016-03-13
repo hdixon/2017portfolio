@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="paperstyle.css">
     <script type="text/javascript" src="paper-full.min.js"></script>
     <script type="text/paperscript" canvas="background">
-        var num = 230;
+        var num = 200;
         var width = view.bounds.width;
         var height = view.bounds.height;
 
@@ -36,9 +36,12 @@
                 if (!s.bounds.intersects(view.bounds)) {
                     if (s.position.x > width) {
                         s.position.x %= width;
-                    }
-                    if (s.position.y > height) {
+                    } if (s.position.x < 0) {
+                        s.position.x = width;
+                    } if (s.position.y > height) {
                         s.position.y %= height;
+                    } if (s.position.y < 0) {
+                        s.position.y = height;
                     }
                 }
             }
@@ -52,8 +55,8 @@
             s.opacity = 0.95 - Math.random();
 
             // generate initial momentums; bigger ones move slower
-            s.px = posOrNeg() * Math.random() * (1 - (i / num));
-            s.py = posOrNeg() * Math.random() * (1 - (i / num));
+            s.px = 2 * posOrNeg() * Math.random() * (1 - (i / num));
+            s.py = 2 * posOrNeg() * Math.random() * (1 - (i / num));
 
             if (i % 3 == 0) {
                 s.fillColor = 'red';

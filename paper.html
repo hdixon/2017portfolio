@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>w/e</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+        /* Scale canvas with resize attribute to full size */
+
+        canvas[resize] {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script type="text/javascript" src="paper.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+        var num = 250;
+        var width = view.bounds.width;
+        var height = view.bounds.height;
+
+        // Place the instances of the symbol:
+        for (var i = 0; i < num; i++) {
+
+            var center = Point.random() * view.size;
+            var scale = (i + 1) / num; // makes circles of all sizes
+            var s = new Shape.Circle(center, 50 * scale);
+            s.blendMode = 'multiply';
+            s.opacity = 0.95 - Math.random();
+
+            if (i % 3 == 0) {
+                s.fillColor = 'red';
+            }
+            else if (i % 3 == 1) {
+                s.fillColor = 'green';
+            } else {
+                s.fillColor = 'blue';
+            }
+        }
+
+        function posOrNeg() {
+            if(Math.random() >= 0.5) return 1;
+            else return -1;
+        }
+
+        function onFrame(event) {
+            for (var i = 0; i < num; i++) {
+                var s = project.activeLayer.children[i];
+                var dx = Math.sin(((i / num)) / 10);
+                var dy = Math.sin(((i / num)) / 10);
+
+                s.position.x += (dx * posOrNeg());
+                s.position.y += (dy * posOrNeg());
+
+                if (!s.isInside(view.bounds)) {
+                    s.remove();
+                    drawCircle(Math.round(Math.random() * num));
+                }
+            }
+
+        }
+
+        function drawCircle(i) {
+            var center = Point.random() * view.size;
+            var scale = (i + 1) / num; // makes circles of all sizes
+            var s = new Shape.Circle(center, 50 * scale);
+            s.blendMode = 'multiply';
+            s.opacity = 0.95 - Math.random();
+
+
+            if (i % 3 == 0) {
+                s.fillColor = 'red';
+            }
+            else if (i % 3 == 1) {
+                s.fillColor = 'green';
+            } else {
+                s.fillColor = 'blue';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas" resize></canvas>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: "Source Sans Pro", helvetica, arial, sans-serif;
+    line-height: 1.3;
+    color: #E9E9E9;
+    margin: 0px;
+}
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+a {
+    color: #FEDE4F;
+    text-decoration: none;
+}
+a:hover {
+    color: #E9E9E9;
+    transition: all 400ms ease-in-out;
+}
+a.button {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px 10px 6px;
+    font-weight: 700;
+    transition: 200ms all ease-in-out;
+    margin: 20px 10px;
+    text-transform: uppercase;
+    position: relative;
+    color: #ECEFF1;
+    border: 1px solid #ECEFF1; // whiteish
+}
+a.button:hover {
+    background: #EF5350;
+    color: #ECEFF1; // whiteish
+    border-color: #EF5350;
+}
+.container {
+    width: calc(80% - 200px);
+    max-width: 350px;
+    min-width: 240px;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: table;
+}
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+    height: 100vh;
+}
+#namecard {
+    height: 100vh;
+    min-height: 200px;
+    background-color: #233447;
+    font-size: 1.2em;
+}
+#contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+#name {
+    font-size: 1.5em;
+    color: #f86b62;
+    font-weight: 600;
+}
+#activities {
+    height: 100vh;
+    min-height: 280px;
+    background-color: #f86b62;
+    padding: 50px;
+    font-size: 1.2em;
+}
+#footer {
+    font-size: 15px;
+    padding: 30px;
+    margin: 30px;
+    display: block;
+    color: #233447;
+    background-color: #FFF;
+    text-align: center;
+}

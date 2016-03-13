@@ -4,36 +4,22 @@
 
 <head>
     <title>w/e</title>
-
-    <style>
-        html,
-        body {
-            margin: 0;
-            overflow: hidden;
-            height: 100%;
-        }
-        /* Scale canvas with resize attribute to full size */
-
-        canvas[resize] {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
+    <link rel="stylesheet" href="paperstyle.css">
     <script type="text/javascript" src="paper-full.min.js"></script>
-    <script type="text/paperscript" canvas="canvas">
+    <script type="text/paperscript" canvas="background">
         var num = 250;
         var width = view.bounds.width;
         var height = view.bounds.height;
 
         // Place the instances of the symbol:
         for (var i = 0; i < num; i++) {
-            
+
             drawCircle(i);
+
         }
 
         function posOrNeg() {
-            if(Math.random() >= 0.5) return 1;
+            if (Math.random() >= 0.5) return 1;
             else return -1;
         }
 
@@ -51,7 +37,6 @@
                     drawCircle(Math.round(Math.random() * num));
                 }
             }
-
         }
 
         function drawCircle(i) {
@@ -61,11 +46,9 @@
             s.blendMode = 'multiply';
             s.opacity = 0.95 - Math.random();
 
-
             if (i % 3 == 0) {
                 s.fillColor = 'red';
-            }
-            else if (i % 3 == 1) {
+            } else if (i % 3 == 1) {
                 s.fillColor = 'green';
             } else {
                 s.fillColor = 'blue';
@@ -73,10 +56,32 @@
         }
 
     </script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-75040388-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
-    <canvas id="canvas" resize></canvas>
+    <div id="container">
+            <div id="text">
+                <h1>:D</h1>
+            </div>
+        <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
+    </div>
 </body>
 
 </html>

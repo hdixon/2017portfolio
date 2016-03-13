@@ -26,11 +26,15 @@
         function onFrame(event) {
             for (var i = 0; i < num; i++) {
                 var s = project.activeLayer.children[i];
-                var dx = Math.sin(((i / num)) / 10);
-                var dy = Math.sin(((i / num)) / 10);
+                var dx = Math.sin(((i / num)) / 10) * posOrNeg();
+                var dy = Math.sin(((i / num)) / 10) * posOrNeg();
 
-                s.position.x += (dx * posOrNeg());
-                s.position.y += (dy * posOrNeg());
+                // move by dx and dy with consideration to momentum
+                s.position.x += dx + s.px / 5;
+                s.position.y += dy + s.py / 5;
+
+                // change momentum according to random movement
+                // s.px +=
 
                 if (!s.bounds.intersects(view.bounds)) {
                     s.remove();
@@ -42,9 +46,13 @@
         function drawCircle(i) {
             var center = Point.random() * view.size;
             var scale = (i + 1) / num; // makes circles of all sizes
-            var s = new Shape.Circle(center, 50 * scale);
+            var s = new Shape.Circle(center, 60 * scale);
             s.blendMode = 'multiply';
             s.opacity = 0.95 - Math.random();
+
+            // generate initial momentums; bigger ones move slower
+            s.px = posOrNeg() * Math.random() * (1 - (i / num));
+            s.py = posOrNeg() * Math.random() * (1 - (i / num));
 
             if (i % 3 == 0) {
                 s.fillColor = 'red';

@@ -32,7 +32,7 @@
                 s.position.x += (dx * posOrNeg());
                 s.position.y += (dy * posOrNeg());
 
-                if (!s.isInside(view.bounds)) {
+                if (!s.bounds.intersects(view.bounds)) {
                     s.remove();
                     drawCircle(Math.round(Math.random() * num));
                 }

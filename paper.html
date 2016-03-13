@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="paperstyle.css">
     <script type="text/javascript" src="paper-full.min.js"></script>
     <script type="text/paperscript" canvas="background">
-        var num = 200;
+        var num = 230;
         var width = view.bounds.width;
         var height = view.bounds.height;
 
@@ -32,9 +32,6 @@
                 // move by dx and dy with consideration to momentum
                 s.position.x += dx + s.px / 5;
                 s.position.y += dy + s.py / 5;
-
-                // change momentum according to random movement
-                // s.px +=
 
                 if (!s.bounds.intersects(view.bounds)) {
                     if (s.position.x > width) {

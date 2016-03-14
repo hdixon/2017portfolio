@@ -6,6 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Henry Dixon is a developer and designer at Carnegie Mellon University.">
+    <script type="text/javascript" src="paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="background">
+        var num = 200;
+        var width = view.bounds.width;
+        var height = view.bounds.height;
+
+        // Place the instances of the symbol:
+        for (var i = 0; i < num; i++) {
+
+            drawCircle(i);
+
+        }
+
+        function posOrNeg() {
+            if (Math.random() >= 0.5) return 1;
+            else return - 1;
+        }
+
+        function onFrame(event) {
+            for (var i = 0; i < num; i++) {
+                var s = project.activeLayer.children[i];
+                var dx = Math.sin(((i / num)) / 15) * posOrNeg();
+                var dy = Math.sin(((i / num)) / 15) * posOrNeg();
+
+                // move by dx and dy with consideration to momentum
+                s.position.x += dx + s.px / 5;
+                s.position.y += dy + s.py / 5;
+
+                if (!s.bounds.intersects(view.bounds)) {
+                    if (s.position.x > width) {
+                        s.position.x %= width;
+                    } if (s.position.x < 0) {
+                        s.position.x = width;
+                    } if (s.position.y > height) {
+                        s.position.y %= height;
+                    } if (s.position.y < 0) {
+                        s.position.y = height;
+                    }
+                }
+            }
+        }
+
+        function drawCircle(i) {
+            var center = Point.random() * view.size;
+            var scale = (i + 1) / num; // makes circles of all sizes
+            var s = new Shape.Circle(center, 45 * scale);
+            s.blendMode = 'multiply';
+            s.opacity = 0.95 - Math.random();
+
+            // generate initial momentums; bigger ones move slower
+            s.px = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
+            s.py = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
+
+            if (i % 4 == 0) {
+                s.fillColor = '#FFDC3E';
+            } else if (i % 4 == 1) {
+                s.fillColor = '#1C2928';
+            } else if (i % 4 == 2) {
+                s.fillColor = '#00A2FD';
+            } else {
+                s.fillColor = '#FFFFFF';
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
     <title>hdixon.io</title>
     <script>
@@ -27,6 +91,7 @@
 </head>
 
 <body>
+  <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
     <div id="namecard">
         <div id="contact">
             <a href="mailto:hdixon@cmu.edu" role="button" class="button">Email Me</a>

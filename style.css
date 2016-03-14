@@ -14,7 +14,6 @@ a {
 }
 a:hover {
     color: #E9E9E9;
-    transition: all 400ms ease-in-out;
 }
 a.button {
     text-align: center;
@@ -25,13 +24,14 @@ a.button {
     margin: 20px 10px;
     text-transform: uppercase;
     position: relative;
-    color: #ECEFF1;
-    border: 1px solid #ECEFF1; // whiteish
+    color: #233447;
+    transition: all 150ms ease-in;
+    border: 1px solid #233447; // whiteish
 }
 a.button:hover {
-    background: #EF5350;
-    color: #ECEFF1; // whiteish
-    border-color: #EF5350;
+    background: #233447;
+    color: #eee; // whiteish
+    border-color: #233447;
 }
 .container {
     width: calc(80% - 200px);

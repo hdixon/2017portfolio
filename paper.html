@@ -50,7 +50,7 @@
         function drawCircle(i) {
             var center = Point.random() * view.size;
             var scale = (i + 1) / num; // makes circles of all sizes
-            var s = new Shape.Circle(center, 80 * scale);
+            var s = new Shape.Circle(center, 45 * scale);
             s.blendMode = 'multiply';
             s.opacity = 0.95 - Math.random();
 
@@ -58,12 +58,14 @@
             s.px = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
             s.py = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
 
-            if (i % 3 == 0) {
-                s.fillColor = 'red';
-            } else if (i % 3 == 1) {
-                s.fillColor = 'green';
+            if (i % 4 == 0) {
+                s.fillColor = '#FFDC3E';
+            } else if (i % 4 == 1) {
+                s.fillColor = '#1C2928';
+            } else if (i % 4 == 2) {
+                s.fillColor = '#00A2FD';
             } else {
-                s.fillColor = 'blue';
+                s.fillColor = '#FFFFFF';
             }
         }
 
@@ -91,7 +93,7 @@
     <div id="container">
             <div id="text">
                 <h1>:D</h1>
-                <h2>a <a style="text-decoration:none" href="http://paperjs.org">paperjs</a> experiment<h2>
+                <h2>a <a style="text-decoration:none" href="http://paperjs.org">paperjs</a> <br><b>experiment</b><h2>
             </div>
         <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
     </div>

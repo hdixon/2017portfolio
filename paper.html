@@ -33,17 +33,29 @@
                 s.position.x += dx + s.px / 5;
                 s.position.y += dy + s.py / 5;
 
-                if (!s.bounds.intersects(view.bounds)) {
-                    if (s.position.x > width) {
-                        s.position.x %= width;
-                    } if (s.position.x < 0) {
-                        s.position.x = width;
-                    } if (s.position.y > height) {
-                        s.position.y %= height;
-                    } if (s.position.y < 0) {
-                        s.position.y = height;
-                    }
-                }
+
+                keepInView(s);
+            }
+        }
+
+        function keepInView(item) {
+            var position = item.position;
+            var itemBounds = item.bounds;
+            var bounds = view.bounds;
+            if (itemBounds.left > bounds.width) {
+                position.x = -item.bounds.width;
+            }
+
+            if (position.x < -itemBounds.width) {
+                position.x = bounds.width + itemBounds.width;
+            }
+
+            if (itemBounds.top > view.size.height) {
+                position.y = -itemBounds.height;
+            }
+
+            if (position.y < -itemBounds.height) {
+                position.y = bounds.height + itemBounds.height / 2;
             }
         }
 

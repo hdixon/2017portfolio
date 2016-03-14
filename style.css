@@ -11,6 +11,7 @@ h1, h2, h3 {
 a {
     color: #FEDE4F;
     text-decoration: none;
+    transition: all 100ms ease-in;
 }
 a:hover {
     color: #E9E9E9;
@@ -20,17 +21,16 @@ a.button {
     font-size: 0.8em;
     padding: 5px 10px 6px;
     font-weight: 700;
-    transition: 200ms all ease-in-out;
     margin: 20px 10px;
     text-transform: uppercase;
     position: relative;
     color: #233447;
     transition: all 150ms ease-in;
-    border: 1px solid #233447; // whiteish
+    border: 1px solid #233447;
 }
 a.button:hover {
     background: #233447;
-    color: #eee; // whiteish
+    color: #eee;
     border-color: #233447;
 }
 .container {
@@ -65,7 +65,8 @@ canvas {
     border-radius: 5px;
     background-color: #233447;
     z-index: 2;
-    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
 }
 
 .content.second {

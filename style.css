@@ -68,6 +68,36 @@ canvas {
     box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
 }
 
+.content.second {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.block {
+  padding: 44px 88px;
+}
+
+
+.block span.title {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.block.up-photography {
+  background-color: #1AA8E2;
+}
+
+.block.up-photography p{
+  max-width: 500px;
+  width: auto;
+  font-size: 0.8em;
+  margin-top: 10px;
+  line-height: 1.4em;
+
+}
+
 #namecard {
     height: 100vh;
     min-height: 200px;

@@ -150,10 +150,10 @@ canvas {
 }
 
 .block.up-photography {
-  background-color: #1AA8E2;
-  display: flex;
-   justify-content: space-between;
-   align-items: center;
+    background-color: #1AA8E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .window {
@@ -224,7 +224,8 @@ canvas {
 
 .block #current {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    justify-content: center;
     align-items: center;
 }
 
@@ -260,7 +261,8 @@ canvas {
 }
 
 #password-meter {
-  background-color: red;
+  background-image: url("pw-thumb.png");
+  background-size: 200px;
   height: 300px;
   width: 200px;
   float: right;

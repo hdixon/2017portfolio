@@ -65,7 +65,7 @@
         } else if (i % 4 == 1) {
             s.fillColor = '#1C2928';
         } else if (i % 4 == 2) {
-            s.fillColor = '#00A2FD';
+            s.fillColor = '#00A2FD'; // donald duck blue
         } else {
             s.fillColor = '#FFFFFF';
         }

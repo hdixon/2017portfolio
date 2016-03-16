@@ -231,6 +231,13 @@ canvas {
   padding-left: 36px;
 }
 
+.block.research .paper-preview {
+    transition: all 70ms ease-in-out;
+}
+
+.block.research .paper-preview:hover {
+    box-shadow: 0px 0px 20px #00A2FD;
+}
 
 .block.research .title{
   display: block;

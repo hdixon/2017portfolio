@@ -1,72 +1,72 @@
-        var num = 200;
-        var width = view.bounds.width;
-        var height = view.bounds.height;
+    var num = 200;
+    var width = view.bounds.width;
+    var height = view.bounds.height;
 
-        // Place the instances of the symbol:
+    // Place the instances of the symbol:
+    for (var i = 0; i < num; i++) {
+
+        drawCircle(i);
+
+    }
+
+    function posOrNeg() {
+        if (Math.random() >= 0.5) return 1;
+        else return - 1;
+    }
+
+    function onFrame(event) {
         for (var i = 0; i < num; i++) {
+            var s = project.activeLayer.children[i];
+            var dx = Math.sin(((i / num)) / 15) * posOrNeg();
+            var dy = Math.sin(((i / num)) / 15) * posOrNeg();
 
-            drawCircle(i);
+            // move by dx and dy with consideration to momentum
+            s.position.x += dx + s.px / 5;
+            s.position.y += dy + s.py / 5;
 
+            keepInView(s);
+        }
+    }
+
+    function keepInView(item) {
+        var position = item.position;
+        var itemBounds = item.bounds;
+        var bounds = view.bounds;
+        if (itemBounds.left > bounds.width) {
+            position.x = -item.bounds.width;
         }
 
-        function posOrNeg() {
-            if (Math.random() >= 0.5) return 1;
-            else return - 1;
+        if (position.x < -itemBounds.width) {
+            position.x = bounds.width + itemBounds.width;
         }
 
-        function onFrame(event) {
-            for (var i = 0; i < num; i++) {
-                var s = project.activeLayer.children[i];
-                var dx = Math.sin(((i / num)) / 15) * posOrNeg();
-                var dy = Math.sin(((i / num)) / 15) * posOrNeg();
-
-                // move by dx and dy with consideration to momentum
-                s.position.x += dx + s.px / 5;
-                s.position.y += dy + s.py / 5;
-
-                keepInView(s);
-            }
+        if (itemBounds.top > view.size.height) {
+            position.y = -itemBounds.height;
         }
 
-        function keepInView(item) {
-            var position = item.position;
-            var itemBounds = item.bounds;
-            var bounds = view.bounds;
-            if (itemBounds.left > bounds.width) {
-                position.x = -item.bounds.width;
-            }
-
-            if (position.x < -itemBounds.width) {
-                position.x = bounds.width + itemBounds.width;
-            }
-
-            if (itemBounds.top > view.size.height) {
-                position.y = -itemBounds.height;
-            }
-
-            if (position.y < -itemBounds.height) {
-                position.y = bounds.height + itemBounds.height / 2;
-            }
+        if (position.y < -itemBounds.height) {
+            position.y = bounds.height + itemBounds.height / 2;
         }
+    }
 
-        function drawCircle(i) {
-            var center = Point.random() * view.size;
-            var scale = (i + 1) / num; // makes circles of all sizes
-            var s = new Shape.Circle(center, 45 * scale);
-            s.blendMode = 'multiply';
-            s.opacity = 0.95 - Math.random();
+    function drawCircle(i) {
+        var center = Point.random() * view.size;
+        var scale = (i + 1) / num; // makes circles of all sizes
+        var s = new Shape.Circle(center, 45 * scale);
+        s.blendMode = 'multiply';
+        s.opacity = 0.95 - Math.random();
 
-            // generate initial momentums; bigger ones move slower
-            s.px = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
-            s.py = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
+        // generate initial momentums; bigger ones move slower
+        s.px = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
+        s.py = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
 
-            if (i % 4 == 0) {
-                s.fillColor = '#FFDC3E';
-            } else if (i % 4 == 1) {
-                s.fillColor = '#1C2928';
-            } else if (i % 4 == 2) {
-                s.fillColor = '#00A2FD';
-            } else {
-                s.fillColor = '#FFFFFF';
-            }
+        if (i % 4 == 0) {
+            s.fillColor = '#FFDC3E'; // lisa simpson yellow
+        } else if (i % 4 == 1) {
+            s.fillColor = '#1C2928';
+        } else if (i % 4 == 2) {
+            s.fillColor = '#00A2FD';
+        } else {
+            s.fillColor = '#FFFFFF';
         }
+    }

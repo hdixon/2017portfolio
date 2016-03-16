@@ -1,4 +1,4 @@
-    var num = 200;
+    var num = 150;
     var width = view.bounds.width;
     var height = view.bounds.height;
 

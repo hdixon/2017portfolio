@@ -224,6 +224,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .block.research .info{
@@ -232,7 +233,7 @@ canvas {
 }
 
 .block.research .paper-preview {
-    transition: all 70ms ease-in-out;
+    transition: all 200ms ease-out;
 }
 
 .block.research .paper-preview:hover {
@@ -277,7 +278,7 @@ canvas {
 }
 
 .info-title {
-  margin-top: 36px;
+    margin-top: 36px;
     width: 100%;
     display: block;
     text-align: center;
@@ -286,6 +287,14 @@ canvas {
     text-transform: lowercase;
     margin-right: 8px;
     color: rgba(255, 255, 255, 0.2);
+}
+
+.viewbtn {
+    margin: 10px;
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: "red";
+    border: 1px solid #eee;
 }
 
 .info.description {
@@ -318,15 +327,12 @@ span.paper-title{
   font-size: 0.7em;
   text-align: center;
   display: block;
+  color: #EEE;
 }
 
-
-#footer {
-    font-size: 15px;
-    padding: 30px;
-    margin: 30px;
-    display: block;
-    color: #233447;
-    background-color: #FFF;
+span.paper-description {
+    margin-top: 15px;
+    font-size: 0.6em;
     text-align: center;
+    display: block;
 }

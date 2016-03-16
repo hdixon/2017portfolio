@@ -78,7 +78,7 @@ canvas {
 
 .block span.title {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -92,8 +92,7 @@ canvas {
   width: auto;
   font-size: 0.8em;
   margin-top: 10px;
-  line-height: 1.4em;
-
+  line-height: 1.2em;
 }
 
 #namecard {
@@ -129,7 +128,6 @@ canvas {
 .block {
   padding: 80px 68px;
 }
-
 
 .block span.title {
   font-weight: bold;
@@ -224,7 +222,6 @@ canvas {
 
 .block #current {
     display: flex;
-    /*justify-content: space-between;*/
     justify-content: center;
     align-items: center;
 }

@@ -247,10 +247,10 @@ canvas {
     padding-bottom: 10px;
 }
 
-/*.block.research .info{
+.block.research .info{
   max-width: 520px;
   padding-left: 36px;
-}*/
+}
 
 .block.research .paper-preview {
     transition: all 150ms ease-out;

@@ -243,8 +243,9 @@ canvas {
 .block.more {
     background-color: #222;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: right;
 }
 
 .block.more p {
@@ -256,6 +257,7 @@ canvas {
 
 #social {
     align-items: left;
+    padding-left: 2em;
 }
 .block #current {
     display: flex;

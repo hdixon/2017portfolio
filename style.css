@@ -55,7 +55,7 @@ canvas {
     left: 0;
     background-size: cover;
     pointer-events: none;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .content {

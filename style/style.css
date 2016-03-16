@@ -396,6 +396,10 @@ span.paper-description {
     .block p {
         font-size: 2em;
     }
+
+    .block.research .info{
+      padding-left: 0px;
+    }
 }
 
 @media (max-width: 500px) {

@@ -52,7 +52,7 @@
     function drawCircle(i) {
         var center = Point.random() * view.size;
         var scale = (i + 1) / num; // makes circles of all sizes
-        var s = new Shape.Circle(center, 45 * scale);
+        var s = new Shape.Circle(center, 50 * scale);
         s.blendMode = 'multiply';
         s.opacity = 0.95 - Math.random();
 

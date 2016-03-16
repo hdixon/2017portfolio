@@ -248,6 +248,17 @@ canvas {
     text-align: right;
 }
 
+
+.block.more img {
+    opacity: 0.3;
+    vertical-align: middle;
+    transition: all 100ms ease-in;
+}
+
+.block.more img:hover {
+    opacity: 1;
+}
+
 .block.more p {
     width: auto;
     font-size: 0.8em;

@@ -160,14 +160,6 @@ canvas {
     align-items: center;
 }
 
-.block.footer {
-    background-color: "blue";
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8em;
-}
-
 .block.up-photography {
     background-color: #1AA8E2;
     display: flex;
@@ -186,6 +178,10 @@ canvas {
 .window:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0 0 20px 1px;
   transform: scale(1.03, 1.03) rotate(0.4deg);
+}
+
+.paper:hover {
+    transform: scale(1.03, 1.03);
 }
 
 .window .top-bar {
@@ -254,7 +250,7 @@ canvas {
 }
 
 .block.research .paper-preview {
-    transition: all 200ms ease-out;
+    transition: all 150ms ease-out;
 }
 
 .block.research .paper-preview:hover {
@@ -331,6 +327,7 @@ canvas {
 
 .paper {
   width: 165px;
+  transition: all 80ms ease-in;
 }
 
 .paper-preview {

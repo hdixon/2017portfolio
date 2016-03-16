@@ -26,7 +26,10 @@ a.button {
     position: relative;
     color: #233447;
     transition: all 150ms ease-out;
-    border: 1px solid #233447; // whiteish
+    border: 1px solid #233447;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+
 }
 a.button:hover {
     background: #233447;
@@ -244,10 +247,10 @@ canvas {
     padding-bottom: 10px;
 }
 
-.block.research .info{
+/*.block.research .info{
   max-width: 520px;
   padding-left: 36px;
-}
+}*/
 
 .block.research .paper-preview {
     transition: all 150ms ease-out;
@@ -353,4 +356,36 @@ span.paper-description {
     font-size: 0.6em;
     text-align: center;
     display: block;
+}
+
+@media (max-width: 570px) {
+    #namecard { font-size: 1em; }
+    #namecard .button { font-size: 1.1em; }
+
+    .block span.title {
+        font-size: 1.4em;
+    }
+
+    .block {
+        min-width: 220px;
+        text-align: left;
+        padding: 80px 40px;
+    }
+
+    .window {
+        display: none;
+    }
+
+    .block p {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    #past {
+        margin-top: 0px;
+    }
+    .paper .paper-preview {
+        display: none;
+    }
 }

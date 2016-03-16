@@ -119,7 +119,6 @@ canvas {
     font-size: 1.2em;
 }
 
-
 .content.second {
   background-color: transparent;
   box-shadow: none;
@@ -145,6 +144,20 @@ canvas {
   line-height: 1.4em;
   padding-right: 36px;
 
+}
+
+.block.wwr p {
+    max-width: 620px;
+    width: auto;
+    font-size: 0.8em;
+    margin-top: 8px;
+    line-height: 1.4em;
+}
+
+.block.wwr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .block.up-photography {

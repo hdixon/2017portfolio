@@ -27,7 +27,7 @@ a.button {
     color: #233447;
     transition: all 150ms ease-out;
     border: 1px solid #233447;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
     z-index: 2;
 
 }

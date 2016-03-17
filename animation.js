@@ -1,6 +1,10 @@
-    var num = 150;
+    // var num = 150;
     var width = view.bounds.width;
     var height = view.bounds.height;
+
+    // console.log("canvas area: " + width * height);
+    var num = (width * height) / 5000;
+    console.log(num);
 
     // Place the instances of the symbol:
     for (var i = 0; i < num; i++) {
@@ -57,8 +61,8 @@
         s.opacity = 0.95 - Math.random();
 
         // generate initial momentums; bigger ones move slower
-        s.px = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
-        s.py = 1.75 * posOrNeg() * Math.random() * (1 - (i / num));
+        s.px = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
+        s.py = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
 
         if (i % 4 == 0) {
             s.fillColor = '#FFDC3E'; // lisa simpson yellow

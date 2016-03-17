@@ -92,7 +92,7 @@ canvas {
 
 .block.up-photography p {
   max-width: 500px;
-  width: auto;
+  /*width: auto;*/
   font-size: 0.8em;
   margin-top: 10px;
   line-height: 1.2em;
@@ -421,5 +421,16 @@ span.paper-description {
     }
     .paper .paper-preview {
         display: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .block.up-photography {
+        padding: 5em 5em;
+    }
+
+    .info.description {
+        max-width: 900px;
+
     }
 }

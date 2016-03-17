@@ -1,10 +1,7 @@
-    // var num = 150;
     var width = view.bounds.width;
     var height = view.bounds.height;
 
-    // console.log("canvas area: " + width * height);
-    var num = (width * height) / 7000;
-    console.log(num);
+    var num = (width * height) / 8000;
 
     // Place the instances of the symbol:
     for (var i = 0; i < num; i++) {

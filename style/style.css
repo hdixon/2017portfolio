@@ -388,6 +388,17 @@ span.paper-description {
     display: block;
 }
 
+/* small phones */
+@media (max-width: 500px) {
+    #past {
+        margin-top: 0px;
+    }
+    .paper .paper-preview {
+        display: none;
+    }
+}
+
+/* iphone 5s and before */
 @media (max-width: 570px) {
     #namecard { font-size: 1em; }
     #namecard .button { font-size: 1.1em; }
@@ -415,22 +426,32 @@ span.paper-description {
     }
 }
 
-@media (max-width: 500px) {
-    #past {
-        margin-top: 0px;
+/* iphone 6s to tablets */
+@media (min-width: 570px) and (max-width: 800) {
+    .block span.title {
+        font-size: 10em;
     }
-    .paper .paper-preview {
-        display: none;
+    .block p {
+        font-size: 10em;
     }
 }
 
+
+/* large displays */
 @media (min-width: 1100px) {
     .block.up-photography {
         padding: 5em 5em;
     }
 
+    /* increase font size for all blocks except research */
+    .block .info.description {
+        font-size: 1.2em;
+    }
     .info.description {
         max-width: 900px;
+    }
 
+    .block.more .info.description p {
+        max-width: 500px;
     }
 }

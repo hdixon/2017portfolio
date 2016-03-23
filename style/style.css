@@ -83,7 +83,7 @@ canvas {
     background-color: #eee;
 }
 
-#namecard {
+#herowrapper {
     height: 95vh;
     min-height: 200px;
     position: relative;
@@ -361,8 +361,8 @@ span.paper-description {
 
 /* phones */
 @media (max-width: 570px) {
-    #namecard { font-size: 1em; }
-    #namecard .button { font-size: 1.1em; }
+    #herowrapper { font-size: 1em; }
+    #herowrapper .button { font-size: 1.1em; }
 
     .block p {
         font-size: 1.1em;

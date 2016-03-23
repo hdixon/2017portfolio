@@ -90,6 +90,18 @@ canvas {
     z-index: 2;
 }
 
+.facephoto {
+    width: 50px;
+    margin-top: -250px;
+    justify-content: center;
+    z-index: 2;
+}
+
+.facephoto img {
+    -webkit-clip-path: circle(4em at center);
+    width: 9em;
+}
+
 #contact {
     position: absolute;
     bottom: 0;

@@ -40,7 +40,7 @@ a.button:hover {
 .container {
     width: calc(80% - 200px);
     height: 100%;
-    max-width: 350px;
+    max-width: 550px;
     min-width: 240px;
     vertical-align: middle;
     margin: 0 auto;
@@ -59,15 +59,6 @@ a.button:hover {
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.content {
-    font-weight: 300;
-    padding: 24px;
-    border-radius: 5px;
-    background-color: #222;
-    z-index: 2;
-    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
 }
 
 canvas {
@@ -91,15 +82,27 @@ canvas {
 }
 
 .facephoto {
-    width: 50px;
-    margin-top: -250px;
-    justify-content: center;
-    z-index: 2;
+    z-index: 3;
+    display: block;
+    width: 7.5em;
+    margin: auto;
 }
 
 .facephoto img {
-    -webkit-clip-path: circle(4em at center);
-    width: 9em;
+    -webkit-clip-path: circle(3.5em at center);
+    width: 7.5em;
+    z-index: 3;
+    margin-top: -200px;
+    margin-right: auto;
+}
+.content {
+    font-weight: 300;
+    padding: 24px;
+    border-radius: 5px;
+    background-color: #222;
+    z-index: 2;
+    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
+    width: 350px;
 }
 
 #contact {
@@ -287,7 +290,6 @@ canvas {
   font-weight: bold;
   text-transform: lowercase;
   margin-right: 8px;
-  color: rgba(255, 255, 255, 0.2);
   text-align: left;
   margin-top: 0;
 }
@@ -315,9 +317,10 @@ canvas {
     text-align: center;
     font-size: 1em;
     font-weight: bold;
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin-right: 8px;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.9em;
 }
 
 .info.description {

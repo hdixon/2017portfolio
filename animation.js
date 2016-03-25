@@ -1,7 +1,7 @@
 var width = view.bounds.width;
 var height = view.bounds.height;
 
-var num = (width * height) / 15000;
+var num = (width * height) / 12000;
 
 // Place the instances of the symbol:
 for (var i = 0; i < num; i++) {
@@ -53,7 +53,7 @@ function keepInView(item) {
 function drawCircle(i) {
     var center = Point.random() * view.size;
     var scale = (i + 1) / num; // makes circles of all sizes
-    var s = new Shape.Circle(center, 90 * scale);
+    var s = new Shape.Circle(center, 100 * scale);
     s.blendMode = 'multiply';
     s.opacity = 0.95 - Math.random();
 
@@ -69,5 +69,9 @@ function drawCircle(i) {
         s.fillColor = '#00A2FD'; // donald duck blue
     } else {
         s.fillColor = '#FFFFFF';
+    }
+
+    if (Math.random() > 0.4) {
+        s.blendMode = 'difference'
     }
 }

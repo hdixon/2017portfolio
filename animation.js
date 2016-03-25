@@ -53,7 +53,7 @@ function keepInView(item) {
 function drawCircle(i) {
     var center = Point.random() * view.size;
     var scale = (i + 1) / num; // makes circles of all sizes
-    var s = new Shape.Circle(center, 150 * scale);
+    var s = new Shape.Circle(center, 90 * scale);
     s.blendMode = 'multiply';
     s.opacity = 0.95 - Math.random();
 
@@ -64,20 +64,10 @@ function drawCircle(i) {
     if (i % 4 == 0) {
         s.fillColor = '#FFDC3E'; // lisa simpson yellow
     } else if (i % 4 == 1) {
-        s.fillColor = 'blue';
+        s.fillColor = '#1C2928';
     } else if (i % 4 == 2) {
-        s.fillColor = '#eeeee'; // donald duck blue
+        s.fillColor = '#00A2FD'; // donald duck blue
     } else {
         s.fillColor = '#FFFFFF';
     }
-
-    // if (i % 4 == 0) {
-    //     s.fillColor = '#FFDC3E'; // lisa simpson yellow
-    // } else if (i % 4 == 1) {
-    //     s.fillColor = '#1C2928';
-    // } else if (i % 4 == 2) {
-    //     s.fillColor = '#00A2FD'; // donald duck blue
-    // } else {
-    //     s.fillColor = '#FFFFFF';
-    // }
 }

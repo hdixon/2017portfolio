@@ -4,11 +4,13 @@ body {
     color: #E9E9E9;
     margin: 0px;
 }
+
 a {
     color: #FFDC00;
     text-decoration: none;
     transition: all 300ms ease-out;
 }
+
 a:hover {
     color: #E9E9E9;
 }
@@ -95,6 +97,7 @@ canvas {
     margin-top: -200px;
     margin-right: auto;
 }
+
 .content {
     font-weight: 300;
     padding: 24px;
@@ -225,36 +228,6 @@ canvas {
   background-color: #222;
 }
 
-.block.more {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-}
-
-
-.block.more img {
-    opacity: 0.3;
-    vertical-align: middle;
-    transition: all 100ms ease-in;
-}
-
-.block.more img:hover {
-    opacity: 1;
-}
-
-.block.more p {
-    width: auto;
-    /*font-size: 0.8em;*/
-    line-height: 1.4em;
-    margin: 0.8em 0em;
-}
-
-#social {
-    align-items: left;
-    padding-left: 2em;
-}
 .block #current {
     display: flex;
     justify-content: center;
@@ -360,6 +333,42 @@ span.paper-description {
     font-size: 0.6em;
     text-align: center;
     display: block;
+}
+
+.block.more {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.block.more p {
+    width: auto;
+    line-height: 1.4em;
+    margin: 0.8em 0em;
+}
+
+.block.more .description {
+    display: block;
+}
+
+#social {
+    align-items: left;
+    padding-left: 2em;
+    display: block;
+}
+
+#social img {
+    transform: scale(1.2, 1.2);
+    margin: 0.5em 0.5em;
+    opacity: 0.3;
+    vertical-align: middle;
+    transition: all 100ms ease-in;
+}
+
+#social img:hover {
+    opacity: 1;
 }
 
 /* phones */

@@ -121,9 +121,6 @@ canvas {
     font-weight: 600;
 }
 
-.block.up-photography {
-  background-color: #1AA8E2;
-}
 
 .block.up-photography p {
   max-width: 620px;
@@ -237,7 +234,11 @@ canvas {
 
 .block.research .info{
   max-width: 520px;
-  padding-left: 36px;
+}
+
+.info {
+    padding: 5px 35px;
+    min-width: 200px;
 }
 
 .block.research .paper-preview {
@@ -259,16 +260,8 @@ canvas {
 
 .block.research .info .info-title {
   float: left;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: lowercase;
-  margin-right: 8px;
   text-align: left;
   margin-top: 0;
-}
-
-.block.research .info p{
-  line-height: 1.4em;
 }
 
 #password-meter {
@@ -288,9 +281,8 @@ canvas {
     width: 100%;
     display: block;
     text-align: center;
-    font-size: 1em;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-right: 8px;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 0.9em;
@@ -346,22 +338,17 @@ span.paper-description {
 .block.more p {
     width: auto;
     line-height: 1.4em;
-    margin: 0.8em 0em;
-}
-
-.block.more .description {
-    display: block;
 }
 
 #social {
     align-items: left;
-    padding-left: 2em;
-    display: block;
+    padding-left: 1em;
+    display: flex;
 }
 
 #social img {
-    transform: scale(1.2, 1.2);
-    margin: 0.5em 0.5em;
+    transform: scale(1.25, 1.25);
+    margin: 0.6em 0.6em;
     opacity: 0.3;
     vertical-align: middle;
     transition: all 100ms ease-in;
@@ -399,6 +386,14 @@ span.paper-description {
 
     .paper {
         padding: 1.1rem 0;
+    }
+
+    #social {
+        flex-direction: column;
+    }
+
+    .block.more .info.description {
+        margin: 0em 1em;
     }
 }
 

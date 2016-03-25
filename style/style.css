@@ -343,7 +343,8 @@ span.paper-description {
 #social {
     align-items: left;
     padding-left: 1em;
-    display: flex;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
 #social img {

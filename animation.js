@@ -1,7 +1,7 @@
 var width = view.bounds.width;
 var height = view.bounds.height;
 
-var num = (width * height) / 12000;
+var num = (width * height) / 10000;
 
 // Place the instances of the symbol:
 for (var i = 0; i < num; i++) {
@@ -53,7 +53,7 @@ function keepInView(item) {
 function drawCircle(i) {
     var center = Point.random() * view.size;
     var scale = (i + 1) / num; // makes circles of all sizes
-    var s = new Shape.Circle(center, 100 * scale);
+    var s = new Shape.Circle(center, 110 * scale);
     s.blendMode = 'multiply';
     s.opacity = 0.95 - Math.random();
 
@@ -61,17 +61,13 @@ function drawCircle(i) {
     s.px = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
     s.py = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
 
-    if (i % 4 == 0) {
-        s.fillColor = '#FFDC3E'; // lisa simpson yellow
-    } else if (i % 4 == 1) {
-        s.fillColor = '#1C2928';
-    } else if (i % 4 == 2) {
-        s.fillColor = '#00A2FD'; // donald duck blue
-    } else {
+    if (i % 3 < 3) {
         s.fillColor = '#FFFFFF';
+    } else {
+        s.fillColor = '#00A2FD'; // blue
     }
 
-    if (Math.random() > 0.4) {
+    if (Math.random() > 0.3) {
         s.blendMode = 'difference'
     }
 }

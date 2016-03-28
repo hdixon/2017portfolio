@@ -1,7 +1,7 @@
 var width = view.bounds.width;
 var height = view.bounds.height;
 
-var num = (width * height) / 10000;
+var num = (width * height) / 16000;
 
 // Place the instances of the symbol:
 for (var i = 0; i < num; i++) {
@@ -53,21 +53,17 @@ function keepInView(item) {
 function drawCircle(i) {
     var center = Point.random() * view.size;
     var scale = (i + 1) / num; // makes circles of all sizes
-    var s = new Shape.Circle(center, 110 * scale);
+    var s = new Shape.Circle(center, 120 * scale);
     s.blendMode = 'multiply';
-    s.opacity = 0.95 - Math.random();
+    s.opacity = (1 - Math.random()) + 0.5;
 
     // generate initial momentums; bigger ones move slower
     s.px = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
     s.py = 1.5 * posOrNeg() * Math.random() * (1 - (i / num));
 
-    if (i % 3 < 3) {
-        s.fillColor = '#FFFFFF';
+    if (i % 2 == 0) {
+        s.fillColor = '#def';
     } else {
-        s.fillColor = '#00A2FD'; // blue
-    }
-
-    if (Math.random() > 0.3) {
-        s.blendMode = 'difference'
+        s.fillColor = '#abc'; // blue
     }
 }

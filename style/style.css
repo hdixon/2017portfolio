@@ -2,6 +2,7 @@ body {
     font-family: "Source Sans Pro", helvetica, arial, sans-serif;
     line-height: 1.3;
     color: #E9E9E9;
+    background-color: #222;
     margin: 0px;
 }
 
@@ -19,26 +20,29 @@ p {
     font-weight: 300;
 }
 
-a.button {
-    text-align: center;
-    font-size: 1rem;
-    padding: 5px 10px 6px;
-    font-weight: 600;
-    margin: 20px 10px;
-    text-transform: uppercase;
-    position: relative;
+::selection {
+    background-color: #FFDC00;
     color: #222;
-    transition: all 150ms ease-out;
-    border: 1px solid #222;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+}
+::-moz-selection {
+    background-color: #FFDC00;
+    color: #222;
+}
 
+
+/*a.button {
+    text-transform: uppercase;
+    text-align: center;
+    color: #eee;
+    transition: all 150ms ease-out;
+    box-shadow: 0 0 14px 2px rgba(255, 255, 255, 0.1);
+    z-index: 2;
 }
 a.button:hover {
-    background: #222;
-    color: #eee; // whiteish
-    border-color: #001f3f;
-}
+    background: #eee;
+    color: #222; // whiteish
+}*/
+
 .container {
     width: calc(80% - 200px);
     height: 100%;
@@ -49,6 +53,15 @@ a.button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.namecard li {
+    display:inline;
+}
+
+.namecard ul {
+    margin: 0;
+    padding: 0;
 }
 
 .block {
@@ -73,7 +86,8 @@ canvas {
     left: 0;
     background-size: cover;
     pointer-events: none;
-    background-color: #eee;
+    /*background-color: #abc;*/
+    background-color: #FEFFFF;
 }
 
 #herowrapper {
@@ -104,16 +118,16 @@ canvas {
     border-radius: 5px;
     background-color: #222;
     z-index: 2;
-    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.2);
     width: 350px;
 }
 
 #contact {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
-    z-index: 2;
+    /*position: absolute;*/
+    height: 2.5em;
+    width: 200px;
+    z-index: 3;
+    /*margin-left: 100%;*/
 }
 
 #name {
@@ -355,25 +369,28 @@ span.paper-description {
 
 #social {
     align-items: left;
-<<<<<<< HEAD
     padding-left: 1em;
     display: inline-flex;
     vertical-align: middle;
-=======
-    padding-left: 2em;
-    display: block;
->>>>>>> parent of 58aec48... paddings and margins and stuff
 }
 
-#social img {
-    transform: scale(1.2, 1.2);
-    margin: 0.5em 0.5em;
+span.end {
+    font-weight: 100;
+}
+
+span.end i {
+    margin-left: 3pt;
+}
+
+ul img {
+    transform: scale(0.9, 0.9);
+    margin: 0.5em 0em;
     opacity: 0.3;
     vertical-align: middle;
     transition: all 100ms ease-in;
 }
 
-#social img:hover {
+ul img:hover {
     opacity: 1;
 }
 

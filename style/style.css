@@ -29,20 +29,6 @@ p {
     color: #222;
 }
 
-
-/*a.button {
-    text-transform: uppercase;
-    text-align: center;
-    color: #eee;
-    transition: all 150ms ease-out;
-    box-shadow: 0 0 14px 2px rgba(255, 255, 255, 0.1);
-    z-index: 2;
-}
-a.button:hover {
-    background: #eee;
-    color: #222; // whiteish
-}*/
-
 .container {
     width: calc(80% - 200px);
     height: 100%;
@@ -86,7 +72,6 @@ canvas {
     left: 0;
     background-size: cover;
     pointer-events: none;
-    /*background-color: #abc;*/
     background-color: #FEFFFF;
 }
 
@@ -123,11 +108,9 @@ canvas {
 }
 
 #contact {
-    /*position: absolute;*/
     height: 2.5em;
     width: 200px;
     z-index: 3;
-    /*margin-left: 100%;*/
 }
 
 #name {
@@ -226,7 +209,6 @@ canvas {
   float: left;
   font-size: 1em;
   font-weight: bold;
-  text-transform: lowercase;
   margin-right: 8px;
   text-align: left;
   margin-top: 0;

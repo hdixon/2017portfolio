@@ -9,7 +9,7 @@ body {
 a {
     color: #FFDC00;
     text-decoration: none;
-    transition: all 230ms ease-out;
+    transition: all 170ms ease-out;
 }
 
 a:hover {
@@ -192,14 +192,15 @@ canvas {
     transition: all 150ms ease-out;
 }
 
-.block.research .paper-preview:hover {
+/*.block.research .paper-preview:hover {
     box-shadow: 0px 0px 20px #00A2FD;
-}
+}*/
 
 .block.research .title{
   display: block;
   margin-bottom: 8px;
 }
+
 
 .block.research .info .info-title, .block.research .info p{
   display: inline;
@@ -251,6 +252,7 @@ canvas {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 .paper {

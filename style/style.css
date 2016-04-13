@@ -41,6 +41,10 @@ p {
     align-items: center;
 }
 
+.namecard {
+    line-height: 1.4;
+}
+
 .namecard li {
     display:inline;
 }

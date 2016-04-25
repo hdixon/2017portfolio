@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/hdixon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://hdixon.io
+  * I am hdixon (https://keybase.io/hdixon) on keybase.
+  * I have a public key with fingerprint 8E53 ED71 4D13 94F0 0E3F  DA17 EAAE 8C3F 4519 EF93
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
+            "fingerprint": "8e53ed714d1394f00e3fda17eaae8c3f4519ef93",
+            "host": "keybase.io",
+            "key_id": "eaae8c3f4519ef93",
+            "kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
+            "uid": "6ecf2853e3bfe70a2308e54ea313d119",
+            "username": "hdixon"
+        },
+        "service": {
+            "hostname": "hdixon.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1461568702,
+    "expire_in": 157680000,
+    "prev": "4630145ffee38ae3bebf7e492d8d192f03900598fb2da4f32f48f9670823ca70",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIaAnicrVJbSFRBGD5mF9uKSiozkeCEQmA1c+bcZqEiK8ouZC+FS7HNOTOjx932
+rLvrtmKadFMfDMx6EIluCD2mD5UvpmlBVEQXKjKDLhqIpQRGGFFzrB6CHpuXYf75
+vu//vp+/f1665EuDm1qKtx89ezztXm9zpbQ3t7+7WrZcWiX7q+UQm7pYmLJ4Ihhy
+qOyXAQRQ1W0NY26pBoE2REjHVOUEQEJUG+vUprpmEIyRphimbUBoaYZi6womtmaZ
+CtYAkQtk7kRKWSwacyIJIWsyDTFqQJVChFUOAEOcEmgwQphpI65qEDOOkSCWuXGP
+IcxZJM5WO66oiUdwyt4/8P/Zd+WUnM5srpjCM7I4MwBREBARVEYQRBRC7AHjLBYh
+B5lAl1En5UbkmgJZ1JKOzbyxejn++v8VJRpzE67thr1yIhH1e6xEVdSDHWJW8LdA
+0HIiVExQEJIsFneEuh8KpJ1wPEURFWq6aQClQGapqBNjQcdDaIZuAnG8NiwpJFUd
+iblonDOGTCLSMIsbTMUKNSnECgcIA6Bhk1sKJSpHCldNjnUDmAqyiQFkL1JFxJX9
+urBJSoVk3CmNkERljMk1t3r2TZfSfNLMGdO8zZJ8sxf82bdTdzOktnz5xlj1+VkV
+L8vBzR1gZFH/+vjl7M6uV1r73o35b3MWnm442fT5x4vwrlmRwrzmlSfSk5lFfXR8
+1VdtzbQep+1qSc23WmlgHH0Z0IrqJzJ2P5aPhQbH1Dmm2XrnenZWKHXu3eEH0VRv
+KukcaX22dFXxzj2TmTkt0opndVe6LhfPf1J0cZA+5XXDZ0oDy4Ltkx2xpg3tXcvL
+1zReGx0q/LS2pm+0caJk7vLw9vdX3mRty9taHvZdaBgZnNke7lg3cUB6WOgEHuU1
+5u/fHGgJdm81t3wsGGPdAZf6bry+lDtaO8DuV2T0Dy7+LnU+X1J/+9bIUGq4HvTt
+XF31ATVkNv8Em8M7Mg==
+=TtCC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hdixon
+
+==================================================================

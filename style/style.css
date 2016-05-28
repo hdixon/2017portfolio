@@ -306,13 +306,6 @@ span.paper-description {
     display: block;
 }
 
-#social {
-    align-items: left;
-    padding-left: 1em;
-    display: inline-flex;
-    vertical-align: middle;
-}
-
 span.end {
     font-weight: 100;
 }
@@ -331,6 +324,10 @@ ul img {
 
 ul img:hover {
     opacity: 1;
+}
+
+#Page-1:hover {
+    fill: blue;
 }
 
 /* phones */

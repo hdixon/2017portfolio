@@ -1,6 +1,6 @@
 var w = view.bounds.width;
 var h = view.bounds.height;
-var elemHeight = 100 + h / 2;
+var elemHeight = 100 + h / 3;
 
 var bgColors = ["#F59529", "#3F3F9F", "#54D0DF", "#FFFFF", "#000000"]
 var bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
@@ -14,6 +14,7 @@ var endPoint = new Point(w - 50, elemHeight);
 
 var p = new Path([startPoint, midPoint, endPoint]);
 
+updatePoints();
 
 function percentDayOver() {
   var d = new Date(), e = new Date(d);
@@ -77,9 +78,10 @@ function drawAll() {
 }
 
 function updatePoints() {
+  // make sure these are the same as the top globals;
   w = view.bounds.width;
   h = view.bounds.height;
-  elemHeight = 100 + h / 2;
+  elemHeight = 100 + h / 3;
 
   startPoint = new Point(50, elemHeight);
   midPoint = new Point(w / 2 + 50, h / 4);

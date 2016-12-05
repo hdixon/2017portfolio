@@ -2,11 +2,12 @@ var w = view.bounds.width;
 var h = view.bounds.height;
 var elemHeight = 100 + h / 3;
 
-var bgColors = ["#F59529", "#3F3F9F", "#54D0DF", "#FFFFF", "#000000"]
+// var bgColors = ["#F59529", "#3F3F9F", "#54D0DF", "#FFFFF", "#000000"]
+var bgColors = ["#1A1A1A"];
 var bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
-var circlePoint = new Point(425, 130); // update with a function to getcurrent circle point
-var textPoint = circlePoint + 50;
+var circlePoint = new Point(20, 25); // update with a function to getcurrent circle point
+var textPoint = new Point(w - 50, 10);
 
 var startPoint = new Point(50, elemHeight);
 var midPoint = new Point(w / 2 + 50, h / 4);
@@ -88,9 +89,9 @@ function updatePoints() {
   endPoint = new Point(w - 50, elemHeight);
 
   circlePoint = calcCircle();
-  textPoint = circlePoint;
-  textPoint.x += 37;
-  textPoint.y -= 30;
+  // textPoint = circlePoint;
+  // textPoint.x += 37;
+  // textPoint.y -= 30;
 }
 
 function onResize(event) {

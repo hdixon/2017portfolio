@@ -42,10 +42,10 @@ function drawPath() {
     // draw path
     p = new Path([startPoint, midPoint, endPoint])
     p.strokeColor = "#FFFFFF";
-    p.strokeWidth = 4;
+    p.strokeWidth = 2;
     p.blendMode = "exclusion"
     p.smooth();
-    p.dashArray = [1, 4];
+    // p.dashArray = [1, 2];
     return p;
 }
 

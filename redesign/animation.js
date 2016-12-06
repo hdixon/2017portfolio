@@ -1,6 +1,6 @@
 var w = view.bounds.width;
 var h = view.bounds.height;
-var elemHeight = 100 + h / 3;
+var elemHeight = h;
 
 // var bgColors = ["#F59529", "#3F3F9F", "#54D0DF", "#FFFFF", "#000000"]
 var bgColors = ["#1A1A1A"];
@@ -82,7 +82,7 @@ function updatePoints() {
   // make sure these are the same as the top globals;
   w = view.bounds.width;
   h = view.bounds.height;
-  elemHeight = 100 + h / 3;
+  elemHeight = h;
 
   startPoint = new Point(50, elemHeight);
   midPoint = new Point(w / 2 + 50, h / 4);

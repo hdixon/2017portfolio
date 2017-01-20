@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
+    <!-- <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas> -->
     <div id="abovefold" class="container">
+      <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
         <div id="welcomebox">
             <div id="title">
                 <h1>Hello! Welcome.</h1>
@@ -32,11 +33,12 @@
             <ul></div>
         </div>
         <div id="sidebar">
-          <div id="profilepic"><img src="img/profile.jpg" alt="This is what I look like."></div>
+          <div id="profilepic">
+            <img id="profile" src="img/profile.jpg" alt="This is what I look like.">
+          </div>
           <h3>Henry Dixon</h2>
           <p>hdixon@cmu.edu <br>
         </div>
-
     </div>
 </body>
 

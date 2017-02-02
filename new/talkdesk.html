@@ -33,37 +33,96 @@
                 <h5 class="f6 fw2 mt1">TalkDesk, LLC</h5>
             </div>
         </header>
-        <div class="pa4 ph7-l mw9-l center">
-            <p class="f6 f5-ns lh-copy measure georgia">
-                Before I was given the official assignment brief, I knew very little
-                other than the project was concerned abstractly with the idea of
-                thresholds, and alerts/notifications. Without warning, a design
-                brief appeared in my inbox:</p>
-            <p class="f6 lh-copy measure i pl4 bl bw1 b--gold mb3">
-                We want to provide insights to our supervisors so that they can monitor
-                everything from call volume to agent status. A performance threshold
-                usually represents a target zone of performance. For example, a
-                supervisor may set a target zone for <i>average wait time</i>.
-                This is the amout of time (on average) that a caller will wait on
-                the phone before their call is routed. Lets say, the supervisor wants an alert
-                any time the average wait time exceeds ten minutes. This is a simple
-                binary threshold: below 10 minutes is “good," above is “bad."
-              </p>
-              <p class="f6 f5-ns lh-copy measure georgia">
-                So far, so good. A simple binary alert. But in the real world,
-                sometimes this simple system is too rigid, neglecting to inform
-                the user of relevant information. The crux of this design challenge
-                has to do with the word "thresholds"
-              </p>
+        <div id="intro" class="pa4 ph7-l mw9-l center georgia">
+            <p class="f6 f5-ns lh-copy measure">
+                Before I was given the official assignment brief, I knew very little other than the project was concerned abstractly with the idea of thresholds, and alerts/notifications. A design brief appeared in my inbox:
+            </p>
 
-                <!-- Now lets add more value for the supervisor by adding a third “caution” zone to represent when the metric is approaching “bad” but not quite there yet. For this UI challenge, we want to figure out the easiest way
-                for supervisors to customize these thresholds. Don’t forget to ask questions as there may be unforeseen requirements. One such challenge would be the direction of the threshold. For Avg Wait Time anything above 10m is bad. But for another
-                metric like Avg Abandonment Time (the average time in which a caller will hangup before the call is answered), anything below 5m might be good. -->
+            <p class="f6 lh-copy measure pl4 bl bw1 b--gold mb3">
+                We want to provide insights to our supervisors so that they can monitor everything from call volume to agent status. A performance threshold usually represents a target zone of performance. For example, a supervisor may set a target zone for <i>average wait time</i>.
+                This is the amout of time (on average) that a caller will wait on the phone before their call is routed. Lets say, the supervisor wants an alert any time the average wait time exceeds ten minutes. This is a simple binary threshold: below
+                10 minutes is “good," above is “bad."
             </p>
-            <h5 class="f4 f3-nsblack-90 fw6 mt4">Conceptual Ideation</h3>
-            <h6 class="">Where to start?</h5>
-            <p class="f6 f5-ns lh-copy measure georgia">
-              To further understand such a design problem, I usually start by asking several questions to help add some form to this abstract idea.
+
+            <p class="f6 f5-ns lh-copy measure">
+                So far, so good. A simple binary alert. But in the real world, sometimes this simple system is too rigid, neglecting to inform the user of relevant information. The crux of this design challenge seems related to this idea of "thresholds."
             </p>
+
+            <p class="f6 lh-copy measure pl4 bl bw1 b--gold mb3">
+                Now lets add more value for the supervisor by adding a third “caution” zone to represent when the metric is approaching “bad” but not quite there yet. We want to figure out the easiest way for supervisors to
+                <emph class="fw6 i">customize</emph> these thresholds.
+            </p>
+
+            <p class="f6 f5-ns lh-copy measure">
+                Thoughtful representation and painless customization. Now we have a target.
+            </p>
+        </div>
+        <div id="ideation" class="pl4 ph7-l mw9-l center georgia black-90">
+          <h3 class="f2 measure-narrow lh-copy mv0">
+            <span class="bg-yellow lh-copy pa1">Ideation</span>
+          </h3>
+          <h5 class="f4 f3-ns fw1 mt0">Where to begin?</h3>
+
+          <p class="f6 f5-ns lh-copy measure">
+              In situations like these, I usually start by asking several questions to help add some form to this abstract idea.
+          </p>
+
+
+          <h5 class="f4 f3-ns fw6 ma0 pt4 pb2 sans-serif black-90">Why is this feature important?</h5>
+            <ol class="lh-title mt0 sans-serif">
+              <li class="pv2 fw4">Performance thresholds acutely affect business outcomes of TalkDesk’s clients, so if the information presented is unclear, TalkDesk is providing a</li>
+              <li class="pv2 fw4">Businesses are in different spaces and have different needs &rArr; need for customization</li>
+              <li class="pv2 fw4">Making TalkDesk feel more like an assistant who can listen to you and respond to your preferences; gives TD another datapoint to tailor experience</li>
+            </ol>
+
+          <h5 class="f4 f3-ns fw6 ma0 pt4 pb2 b sans-serif">Who is the user (customer)?</h5>
+          <p class="mt0 sans-serif">Any supervisor in a company using Talk Desk.</p>
+
+          <h5 class="f4 f3-ns fw6 ma0 pt4 pb2 b sans-serif">Why does this solve a need?</h5>
+          <ol class="lh-title mt0 sans-serif">
+            <li class="pv2 fw4">A system for setting thresholds is neccessary yet currently absent from TalkDesk’s product.</li>
+            <li class="pv2 fw4">The threshold system needs to be easy for admins to adapt goals to existing team’s performance.</li>
+            <li class="pv2 fw4">Not every admin is an expert, so we should provide contextual recommendations and opportunities to more deeply understand the system.</li>
+            <li class="pv2 fw4">Nobody is keeping vigilant 24/7 watch over their dashboard; warnings need to be clear and accompanied with possible solutions.</li>
+          </ol>
+        </div>
+
+        <div id="fullbleedphotos" class="cf pa2">
+          <div class="fl w-100 w-50-ns ph2">
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+          </div>
+          <div class="fl w-50 w-25-ns ph2">
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+          </div>
+          <div class="fl w-50 w-25-ns ph2">
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+            <img class="pv2 dim db w-100" src=""/>
+          </div>
+        </div>
+        <div id="Inspiration" class="pa4 ph7-l mw9-l center georgia black-90">
+          <h3 class="f2 f1-m measure-narrow lh-copy mv0">
+            <span class="bg-dark-blue moon-gray lh-copy pa1">Inspiration</span>
+          </h3>
+          <h5 class="f4 f3-ns fw1 mt0">How do other designers solve this problem?</h3>
+          <p class="f6 f5-ns lh-copy measure">
+            Seeing the way others approached the problem usually leads to a wide variety of solutions, especially if the problem is less prolific. In my research on thresholds and warnings, it quickly became clear the diversity of ways designers approached the same problem. I’ll include some ways of addressing the threshold problem below, sorted by which company is responsible for the design pattern.
+          </p>
+        </div>
 </body>
+
 </html>

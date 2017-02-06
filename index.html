@@ -1,166 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-<meta name="google-site-verification" content="Z5BJueb79i2sbzqylYAJfR5050LNkK9Mi2tVRAr9BNI" />
-    <meta name="theme-color" content="#000000">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="google-site-verification" content="Z5BJueb79i2sbzqylYAJfR5050LNkK9Mi2tVRAr9BNI" />
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,200' rel='stylesheet' type='text/css'>
+    <meta name="description" content="Henry Dixon is a designer and researcher Carnegie Mellon University.">
+    <title></title>
+    <meta name="author" content="Henry Dixon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Henry Dixon is a developer and designer at Carnegie Mellon University.">
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/chromewindow.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="paper-full.min.js"></script>
-    <script async type="text/paperscript" src="animation.js" canvas="background"></script>
-    <title>Henry Dixon</title>
+    <!-- <link rel="stylesheet" href="css/tachyons.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css" />
+
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        #social svg {
+            width: 66%;
+            height: auto;
+        }
+    </style>
 </head>
 
-<body>
-    <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
-    <div id="herowrapper">
-        <div class="container">
-            <div class="content">
-                <!-- <div class="facephoto"><img src="img/me.jpg"></div> -->
-                <div class="namecard">
-                    <span id="name">Henry Dixon</span>
-                    <br>Student at <a href="http://cmu.edu/" target="_blank">Carnegie Mellon University</a> studying Cognitive Science and Human-Computer Interaction. Researcher at <a href="http://cylab.cmu.edu/">CMU's CyLab</a>. Poet at <a href="https://en.wikipedia.org/wiki/Heart#Symbolism"
-                    target="_blank">heart</a>.
-                    <div id="contact">
-                        <ul>
-                        <li><a href="mailto:&#104;&#100;&#105;&#120;&#111;&#110;&#064;&#099;&#109;&#117;&#046;&#101;&#100;&#117;"><img src="img/e.svg"></a></li>
-                        <li><a href="http://facebook.com/nothenrydixon" target="_blank"><img src="img/f.svg"></a></li>
-                        <li><a href="http://instagram.com/henry.dixon" target="_blank"><img src="img/i.svg"></a></li>
-                        <li><a href="http://github.com/hdixon" target="_blank"><img src="img/g.svg"></a></li>
-                        <li><a href="http://twitter.com/nothenrydixon" target="_blank"><img src="img/t.svg"></a></li>
+<body class="bg-near-white">
+
+    <div class="mw9 center ph3-ns">
+        <div class="cf ph2-ns">
+            <div class="center w-100 pa2 measure">
+              <h1 class="f2 lh-title">Hello and welcome! I'm Henry, and here's some of the things I've been up to.</h1>
+              <p class="lh-copy">This website is currently being updated. You can see my old 2016 website <a href="/2016/index.html" target="_blank">here.</a></p>
+                <div id="categorylist" class="fc tl pt3 near-black">
+                    <h1 class="f4 fw5 ma0">Product Design</h1>
+                    <ul class="list pl0 mt3">
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">A project designing alert thresholds for TalkDesk</a></li>
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">link</a></li>
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">link</a></li>
                     </ul>
-                    </div>
+                    <h1 class="f4 fw5 ma0">Research</h1>
+                    <ul class="list pl0 mt3">
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">link</a></li>
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">link</a></li>
+                        <li><a href="#" class="link blue bg-animate hover-bg-white">link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center w-100 pa2 measure">
+                <div id="social" class="fc">
+                    <a class="link near-black hover-silver dib h2 w2 mr1" href="https://facebook.com/nothenrydixon" title="Facebook">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.476-1.195 1.176v1.54h2.39l-.31 2.416h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                    </a>
+                    <a class="link near-black hover-silver dib h2 w2 mr1" href="https://github.com/hdixon" title="GitHub">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+                    </a>
+                    <a class="link hover-silver near-black dib h2 w2 mr1" href="https://instagram.com/henry.dixon" title="Instagram">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.048 3.233c-.036.78-.166 1.203-.276 1.485-.145.374-.318.64-.598.92-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.097.047-3.233.047s-2.39-.01-3.233-.048c-.78-.036-1.203-.166-1.485-.276-.374-.145-.64-.318-.92-.598-.28-.28-.453-.546-.598-.92-.11-.282-.24-.705-.276-1.485C1.45 10.39 1.44 10.136 1.44 8s.01-2.39.048-3.233c.036-.78.166-1.203.276-1.485.145-.374.318-.64.598-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276C5.61 1.45 5.864 1.44 8 1.44zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
+                    </a>
+                    <a class="link hover-silver near-black dib h2 w2 mr1" href="https://www.linkedin.com/in/henry-dixon" title="LinkedIn">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="activities">
-        <div class="block up-photography">
-            <div class="info description">
-                <span class="title">Up Photography</span>
-                <p>Two years ago, I bought a drone. Drones are expensive, and I wanted it to pay for itself. I started a contracting organization to provide inexpensive arial photography to realtors, or anyone who is interested. <a href="http://upphoto.us/"
-                    target="_blank">Check out our website.</a></p>
-            </div>
-            <!-- fancy little browser frame -->
-            <div class="window">
-                <div class="top-bar">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="tab"></div>
-                </div>
-                <div class="field"></div>
-                <div class="fill">
-                    <a href="http://upphoto.us" target="_blank">
-                        <video width="292" height="180" autoplay="autoplay" loop>
-                            <source src="vid/up-hi.webm" type="video/webm" />
-                            <source src="vid/up-hi.mp4" type="video/mp4" />
-                        </video>
-                    </a>
-                </div>
-            </div>
-            <div class="fullbleed">
-            </div>
-        </div>
-        <div class="block research">
-            <div id="current">
-                <a href="http://cups.cs.cmu.edu/~meter" target="_blank"><div class="window">
-                    <div class="top-bar">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="tab"></div>
-                    </div>
-                    <div class="field"></div>
-                    <div class="fill">
-                        <img src="img/pw-thumb-small.png" style="max-width:100%;">
-                    </div>
-                </div></a>
-                <div class="info">
-                    <span class="title">Research</span>
-                    <span class="info-title">Current Work</span>
-                    <p>I work with the <a href="http://hcii.cmu.edu" target="_blank">Human Computer Interaction Institute</a> on problems related to privacy and security. My current work is with <a href="http://blaseur.com" target="_blank">Blase Ur</a> in
-                        <a href="http://lorrie.cranor.org/" target="_blank">Lorrie Cranor</a>'s lab; we're trying to determine what makes a password strong. In conjunction with what we learn, we're designing a password meter that will nudge users to make
-                        stronger passwords without annoying them. My original project proposal, which outlines my work, is available <a href="pdfs/cups-proposal.pdf" target="_blank">here.</a> The paper describing all we found will be published shortly.</p>
-                </div>
-            </div>
-            <span class="info-title">past work</span>
-            <div id="past">
-                <div class="paper">
-                    <div class="paper-preview">
-                        <a href="pdfs/comparing-menu-designs.pdf" target="_blank"><img src="img/menu-designs-thumb-small.png" style="max-width: 100%; background-size: cover;"></div>
-                    <span class="paper-title">Comparing Menu Designs</span></a>
-                </div>
-                <div class="paper">
-                    <div class="paper-preview">
-                        <a href="pdfs/evaluation-pointing-devices.pdf" target="_blank"><img src="img/scrolling-techniques-thumb-small.png" style="max-width: 100%; background-size: cover;"></div>
-                    <span class="paper-title">Evaluation of Pointing Devices</span></a>
-                </div>
-                <div class="paper">
-                    <div class="paper-preview">
-                        <a href="pdfs/instant-gratification.pdf" target="_blank"><img src="img/instant-gratification-small.png" style="max-width: 100%; background-size: cover;"></div>
-                    <span class="paper-title">The Internet, Instant-Gratification, and Us</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="block wwr">
-            <div class="info description">
-                <span class="title">Wireless World Radio</span>
-                <p>With the backing of <a href="http://wrct.org" target="_blank">WRCT</a>, I started <i>Wireless World Radio</i> with a group of my friends at Carnegie Mellon. Our goal is to tell stories about life at a college campus. We're currently editing
-                    together our first episode. You can get more information on WWR <a href="http://wirelessworld.fm/" target="_blank">here</a> before we release our first episode.</p>
-            </div>
-            <!-- fancy little browser frame -->
-            <div class="window">
-                <div class="top-bar">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="tab"></div>
-                </div>
-                <div class="field"></div>
-                <div class="fill">
-                    <a href="http://wirelessworld.fm" target="_blank"><img src="img/wwr-small.png" style="max-width: 100%"></a>
-                </div>
-            </div>
-        </div>
-        <div class="block more">
-            <div class="info description">
-                <span class="title">There's more.</span>
-                <p>I live for film, writing, taking pictures, and making stuff that has people feeling something. <a href="http://flickr.com/photos/henrydixon">Here are my photos</a> if you're into that kind of thing.</p>
-                <span class="end">made pixel by pixel with <i class="fa fa-heart"></i></span>
-            </div>
-            <!-- <div id="social">
-                <ul>
-                <li><a href="http://facebook.com/nothenrydixon" target="_blank"><img src="img/f.svg"></a></li>
-                <li><a href="http://instagram.com/henry.dixon" target="_blank"><img src="img/i.svg"></a></li>
-                <li><a href="http://github.com/hdixon" target="_blank"><img src="img/g.svg"></a></li>
-                <li><a href="http://twitter.com/nothenrydixon" target="_blank"><img src="img/t.svg"></a></li>
-                </ul>
-            </div> -->
-        </div>
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-75040388-1', 'auto');
-            ga('send', 'pageview');
-        </script>
 </body>
 
 </html>

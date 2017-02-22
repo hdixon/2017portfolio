@@ -27,14 +27,34 @@
         #content {
           padding: 1em;
         }
+
+        canvas {
+            position: absolute;
+            max-width: 100%;
+            height: 95vh;
+            width: 100vw;
+            z-index: -2;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            pointer-events: none;
+            /*background-color: #FEFFFF;*/
+        }
+
+        #infocard {
+          z-index: 1;
+          background-color: rgba(255, 255, 255, 1);
+        }
     </style>
 </head>
 
 <body class="bg-white">
-  <div class="ph3 ph4-ns pv6 black-90 measure-narrow">
+  <canvas id="background" hipi="on" resize="true" keepalive="true"></canvas>
+  <div id="infocard" class="ph3 ph4-ns pv6 black-90 measure-narrow">
     <h1 class="b f3 f2-ns dim black-90 lh-solid">henry dixon</h1>
-    <a href="mailto:hdixon@cmu.edu" class="f6 db b ttu lh-solid link">hdixon@cmu.edu</a>
+    <a href="mailto:hdixon@cmu.edu" class="f6 db b lh-solid link">hdixon@cmu.edu</a>
     <p class="f6">Sorry I don't have more for you right now 😣. Check back later after I'm done moving pixels around.</p>
+    <p class="f6 pt4">If you want some things to click, here are some options:</p>
       <div class="w-100 mt4 measure">
           <div id="social" class="fc">
               <a class="link near-black hover-silver dib h2 w2 mr1" href="https://facebook.com/nothenrydixon" title="Facebook">
@@ -54,7 +74,9 @@
               </a>
           </div>
       </div>
-  </div>
+</div>
+  <script type="text/javascript" src="paper-full.min.js"></script>
+  <script async type="text/paperscript" src="animation.js" canvas="background"></script>
 </body>
 
 </html>

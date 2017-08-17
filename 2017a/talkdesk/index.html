@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="google-site-verification" content="Z5BJueb79i2sbzqylYAJfR5050LNkK9Mi2tVRAr9BNI" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <meta name="description" content="Henry Dixon is a designer and researcher Carnegie Mellon University.">
+    <title>Designing Thresholds</title>
+    <meta name="author" content="Henry Dixon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css" />
+
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white black-90">
+  <header class="bg-blue">
+      <div class="near-white mw9 center pa4 pt3-ns ph7-l">
+          <h5 class="f7 fw5 ttu tracked">Summer 2016</h5>
+          <h3 class="f2 f1-m f-subheadline-l measure-narrow lh-copy mv0">
+            <span class="bg-gold lh-title white pa1">Designing Thresholds</span>
+          </h3>
+          <h6 class="f7 ttu tracked mt4 mb0">Client</h6>
+          <h5 class="f6 fw2 mt1">TalkDesk, LLC</h5>
+      </div>
+  </header>
+
+  <div id="intro" class="pa4 ph7-l mw9-l center georgia">
+      <p class="f6 f5-ns lh-copy measure">
+          Before I was given the official assignment brief, I knew very little other than the project was concerned abstractly with the idea of thresholds, and alerts/notifications. A design brief appeared in my inbox:
+      </p>
+
+      <p class="f6 lh-copy measure pl4 bl bw1 b--gold mb3">
+          We want to provide insights to our supervisors so that they can monitor everything from call volume to agent status. A performance threshold usually represents a target zone of performance. For example, a supervisor may set a target zone for <i>average wait time</i>.
+          This is the amout of time (on average) that a caller will wait on the phone before their call is routed. Lets say, the supervisor wants an alert any time the average wait time exceeds ten minutes. This is a simple binary threshold: below
+          10 minutes is “good," above is “bad."
+      </p>
+
+      <p class="f6 f5-ns lh-copy measure">
+          So far, so good. A simple binary alert. But in the real world, sometimes this simple system is too rigid, neglecting to inform the user of relevant information. The crux of this design challenge seems related to this idea of "thresholds."
+      </p>
+
+      <p class="f6 lh-copy measure pl4 bl bw1 b--gold mb3">
+          Now lets add more value for the supervisor by adding a third “caution” zone to represent when the metric is approaching “bad” but not quite there yet. We want to figure out the easiest way for supervisors to
+          <emph class="fw6 i">customize</emph> these thresholds.
+      </p>
+
+      <p class="f6 f5-ns lh-copy measure">
+          Thoughtful representation and painless customization. Now we have a target.
+      </p>
+  </div>
+
+  <div id="ideation" class="pa4 ph7-l mw9-l center georgia">
+    <h3 class="f4 f3-ns measure mv0 sans-serif">
+      Ideation
+    </h3>
+    <p class="f5 f4-ns fw3 mv0 sans-serif measure">
+      Where to begin?
+    </p>
+    <p class="f6 f5-ns lh-copy measure">
+        In situations like these, I usually start by asking several questions to help add some form to this abstract idea.
+    </p>
+    <p class="f6 f5-ns fw5 ma0 pv2 sans-serif black-90">
+      Why is this feature important?
+    </p>
+    <ul class="lh-title mt0 measure">
+      <li class="pv2 fw4">Performance thresholds acutely affect business outcomes of TalkDesk’s clients, so if the information presented is unclear, TalkDesk is providing a</li>
+      <li class="pv2 fw4">Businesses are in different spaces and have different needs &rArr; need for customization</li>
+      <li class="pv2 fw4">Making TalkDesk feel more like an assistant who can listen to you and respond to your preferences; gives TD another datapoint to tailor experience</li>
+    </ul>
+
+    <p class="f6 f5-ns fw5 ma0 pv2 sans-serif black-90">
+      Who is the user?
+    </p>
+    <p class="mt0 measure">
+      Any supervisor in a company using Talk Desk.
+    </p>
+
+    <p class="f6 f5-ns fw5 ma0 pv2 sans-serif black-90">
+      Why does this solve a need?
+    </p>
+    <ul class="lh-title mt0 measure">
+      <li class="pv2 fw4">A system for setting thresholds is neccessary yet currently absent from TalkDesk’s product.</li>
+      <li class="pv2 fw4">The threshold system needs to be easy for admins to adapt goals to existing team’s performance.</li>
+      <li class="pv2 fw4">Not every admin is an expert, so we should provide contextual recommendations and opportunities to more deeply understand the system.</li>
+      <li class="pv2 fw4">Nobody is keeping vigilant 24/7 watch over their dashboard; warnings need to be clear and accompanied with possible solutions.</li>
+    </ul>
+  </div>
+
+  <div id="inspiration" class="pa4 ph7-l mw9-l center georgia">
+    <h3 class="f4 f3-ns measure mv0 sans-serif">
+      Inspiration
+    </h3>
+    <p class="f5 f4-ns fw3 mv0 sans-serif measure">
+      How do other designers solve this problem?
+    </p>
+    <p class="f6 f5-ns lh-copy measure">
+      Seeing the way others approached the problem usually leads to a wide variety of solutions, especially if the problem is less prolific. In my research on thresholds and warnings, it quickly became clear the diversity of ways designers approached the same problem. I’ll include some ways of addressing the threshold problem below, sorted by which company is responsible for the design pattern.
+    </p>
+    <div class="measure pv2">
+      <h3 class="f3 fw6 tc baskerville ma0">Apple</h3>
+      <p class="f6 fw4 tc sans-serif center ma0 black-70"> Macbook Power & Energy Usage</p>
+      <p class="f6 lh-copy measure-narrow black-50 center sans-serif">
+        Apple’s Activity Monitor is designed to display a lot of data to the user, and its UI is a good example of information hierarchy. Your eyes are drawn to the important, high-level representations of data.
+      </p>
+    </div>
+    <div class="dt center pt0">
+      <div class="aspect-ratio aspect-ratio--8x5 mb4">
+          <div class="aspect-ratio--object cover" style="background:url(apple2.png) center;">
+          </div>
+      </div>
+    </div>
+    <div class="measure pv2">
+      <h3 class="f3 fw6 tc baskerville ma0">Android</h3>
+      <p class="f6 fw4 tc sans-serif center ma0 black-70">Data Usage Settings</p>
+      <p class="f6 lh-copy measure-narrow black-50 center sans-serif">
+        Relevant: Good data usage section should also thoughtfully motivate users to not go over their limit (i.e. threshold)
+        Irrelevant:  more viewing and editing; very simple; TD has multiple input sources and formats and we gotta consider that      </p>
+    </div>
+    <div class="measure pv2">
+      <h3 class="f3 fw6 tc baskerville ma0">Adobe</h3>
+      <p class="f6 fw4 tc sans-serif center ma0 black-70">Photoshop's Levels and After Effects' Timeline</p>
+      <p class="f6 lh-copy measure-narrow black-50 center sans-serif">
+        Commentary commentary      </p>
+    </div>
+  </div>
+
+  <div id="sketches" class="pa4 ph7-l mw9-l center georgia">
+    <h3 class="f4 f3-ns measure mv0 sans-serif">
+      Sketches
+    </h3>
+    <p class="f5 f4-ns fw3 mv0 sans-serif measure">
+      Invisible Thresholds
+    </p>
+    <p class="f6 f5-ns lh-copy measure">
+      Seeing the way others approached the problem usually leads to a wide variety of solutions, especially if the problem is less prolific. In my research on thresholds and warnings, it quickly became clear the diversity of ways designers approached the same problem. I’ll include some ways of addressing the threshold problem below, sorted by which company is responsible for the design pattern.
+    </p>
+  </div>
+</body>
+
+</html>

@@ -4,60 +4,60 @@ https://keybase.io/hdixon
 
 I hereby claim:
 
-  * I am an admin of http://hdixon.io
+  * I am an admin of https://hdixon.github.io
   * I am hdixon (https://keybase.io/hdixon) on keybase.
   * I have a public key with fingerprint 8E53 ED71 4D13 94F0 0E3F  DA17 EAAE 8C3F 4519 EF93
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
-            "fingerprint": "8e53ed714d1394f00e3fda17eaae8c3f4519ef93",
-            "host": "keybase.io",
-            "key_id": "eaae8c3f4519ef93",
-            "kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
-            "uid": "6ecf2853e3bfe70a2308e54ea313d119",
-            "username": "hdixon"
-        },
-        "service": {
-            "hostname": "hdixon.io",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
+      "fingerprint": "8e53ed714d1394f00e3fda17eaae8c3f4519ef93",
+      "host": "keybase.io",
+      "key_id": "eaae8c3f4519ef93",
+      "kid": "010146c599fb47a1c13369d4fa01aa4c96dcd657a9935278c711b572c629ac5b82950a",
+      "uid": "6ecf2853e3bfe70a2308e54ea313d119",
+      "username": "hdixon"
     },
-    "ctime": 1461568702,
-    "expire_in": 157680000,
-    "prev": "4630145ffee38ae3bebf7e492d8d192f03900598fb2da4f32f48f9670823ca70",
-    "seqno": 6,
-    "tag": "signature"
+    "service": {
+      "hostname": "hdixon.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1507584655,
+  "expire_in": 157680000,
+  "prev": "22aadd352bd56a624b708df37cf8fb04c4b177b095b67a002fadb5e116007cb2",
+  "seqno": 39,
+  "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.53
+Version: Keybase OpenPGP v2.0.74
 Comment: https://keybase.io/crypto
 
-yMIaAnicrVJbSFRBGD5mF9uKSiozkeCEQmA1c+bcZqEiK8ouZC+FS7HNOTOjx932
-rLvrtmKadFMfDMx6EIluCD2mD5UvpmlBVEQXKjKDLhqIpQRGGFFzrB6CHpuXYf75
-vu//vp+/f1665EuDm1qKtx89ezztXm9zpbQ3t7+7WrZcWiX7q+UQm7pYmLJ4Ihhy
-qOyXAQRQ1W0NY26pBoE2REjHVOUEQEJUG+vUprpmEIyRphimbUBoaYZi6womtmaZ
-CtYAkQtk7kRKWSwacyIJIWsyDTFqQJVChFUOAEOcEmgwQphpI65qEDOOkSCWuXGP
-IcxZJM5WO66oiUdwyt4/8P/Zd+WUnM5srpjCM7I4MwBREBARVEYQRBRC7AHjLBYh
-B5lAl1En5UbkmgJZ1JKOzbyxejn++v8VJRpzE67thr1yIhH1e6xEVdSDHWJW8LdA
-0HIiVExQEJIsFneEuh8KpJ1wPEURFWq6aQClQGapqBNjQcdDaIZuAnG8NiwpJFUd
-iblonDOGTCLSMIsbTMUKNSnECgcIA6Bhk1sKJSpHCldNjnUDmAqyiQFkL1JFxJX9
-urBJSoVk3CmNkERljMk1t3r2TZfSfNLMGdO8zZJ8sxf82bdTdzOktnz5xlj1+VkV
-L8vBzR1gZFH/+vjl7M6uV1r73o35b3MWnm442fT5x4vwrlmRwrzmlSfSk5lFfXR8
-1VdtzbQep+1qSc23WmlgHH0Z0IrqJzJ2P5aPhQbH1Dmm2XrnenZWKHXu3eEH0VRv
-KukcaX22dFXxzj2TmTkt0opndVe6LhfPf1J0cZA+5XXDZ0oDy4Ltkx2xpg3tXcvL
-1zReGx0q/LS2pm+0caJk7vLw9vdX3mRty9taHvZdaBgZnNke7lg3cUB6WOgEHuU1
-5u/fHGgJdm81t3wsGGPdAZf6bry+lDtaO8DuV2T0Dy7+LnU+X1J/+9bIUGq4HvTt
-XF31ATVkNv8Em8M7Mg==
-=TtCC
+yMImAnicrVJZSBVRGL7XssWobHkqxJiIFsTOmZkzy4U2knyQKIjKtdvZ5jqkc2/3
+jqaJLTeTKKwws10kAiUtSDR6MDORCCpb7KXCAntRobKM6qGwM1YPQY+dl8P5/+/7
+/u/7Ob0zJ/mS/DDj1Oas+Okq/4O750t8Oa9GTlRIJMzKpUCFtItPXLyI8Zgb3GUz
+KSABCKCqUWSaFlF1DClUFM1kqoUBxFilpsYo05COTVNBsm5QHUKCdJlqsokpIoZs
+IoClNMmynRCPRqK24wpZgyOFMx2qDCqmagHAFYthqHOMuUEVS0XQ5JapCGJhOOYx
+hDmCYzzdDouaeAQn7P0D/599l0zIaZxasiE8K8TiOsCyAkQElWMFKgxC0wPGeNTB
+xVygC5ldFnakyjRJ1Eptyr21ejn+6qeHbLewhPxKFImG3TANF3ld143EAh7bLY94
+8D2cBH8LBYntMLFJwSjl0ZgtpgSgQFLX9pQhAjoyVA2hNImXRewoD9oeAumaAcTx
+5vBSISnLGDMmkhOGNKzJKtGBwSxFp5ZhEaBSlUBdJ8BERNMxALKFGUEcQg0AnRJZ
+8qLtdsJSQDGFTxwSmjE75GC3JMqlyp7u/Mk+f5JvSmKC98V8SdOT/3y841nTfE2b
+viYXjj/vu3Xn4eIZh3pi/kTQdLWdP0rpSi2IDzYXf/62bQ89W/BjoGNJ76X0TtTa
+9mXLyKqajI5UmL3+3vZl7an951rocjn3/cI3+z5cv/Zs6vfhuvH+afsfL8nfMPAw
+t7U2b29Oflte0ZmNTmbjzoTHO9jX5gP3j6X0b+9bVJXTrq1rTHc+rrzQuXZu8HCo
+oXg+v0y+jVWfzHztG7ytxuXRk2XD6qqcgk9VdalvhxaOjs2sftqQfeV7YPpI78ux
+HS+Wdm7s6jtYP2ugfmh/Zbe/erC59lbGjfIUPMvInPz2R1r3jJvwycWOFZi1zKlb
+MxrPq1199IhSs2D2u3lZ8QNNW38CN+BF4w==
+=iNc/
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or

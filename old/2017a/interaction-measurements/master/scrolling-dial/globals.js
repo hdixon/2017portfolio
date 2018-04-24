@@ -1,1 +1,0 @@
-var targetFirstSeen = -1;
